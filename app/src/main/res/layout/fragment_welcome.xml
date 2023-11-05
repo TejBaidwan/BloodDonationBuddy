@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".WelcomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/welcomeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="Welcome to the Blood Donation Buddy App!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/welcomeImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bloodinfo" />
+
+            <TextView
+                android:id="@+id/welcomeContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:fontFamily="casual"
+                android:text="Welcome to the BloodDonationBuddy App! This app serves a purpose to provide information about the blood donation process. It will detail what blood donation is and why it is a great act of kindness. You will also be able to learn about the various different blood types to learn what it tells about you, and what the blood donation process looks like. It even allows you to determine whether or not you can donate blood by asking some simple questions about yourself."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
