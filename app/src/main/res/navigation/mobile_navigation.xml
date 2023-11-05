@@ -3,23 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/nav_credits">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.blooddonationbuddy.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/nav_credits"
+        android:name="com.example.blooddonationbuddy.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.blooddonationbuddy.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_donation"
+        android:name="com.example.blooddonationbuddy.DonationEligibilityFragment"
+        android:label="Can You Donate?"
+        tools:layout="@layout/fragment_donation_eligibility" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.blooddonationbuddy.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_process"
+        android:name="com.example.blooddonationbuddy.DonationProcessFragment"
+        android:label="Donation Process"
+        tools:layout="@layout/fragment_donation_process" />
+    <fragment
+        android:id="@+id/nav_blood_types"
+        android:name="com.example.blooddonationbuddy.LearnBloodTypesFragment"
+        android:label="Different Blood Types"
+        tools:layout="@layout/fragment_learn_blood_types" />
+    <fragment
+        android:id="@+id/nav_welcome"
+        android:name="com.example.blooddonationbuddy.WelcomeFragment"
+        android:label="Welcome!"
+        tools:layout="@layout/fragment_welcome" />
 </navigation>
