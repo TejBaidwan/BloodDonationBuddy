@@ -13,6 +13,16 @@
     <string name="menu_eligibility">Can You Donate?</string>
     <string name="menu_credits">Credits</string>
 
+    <string name="welcomePageTitle">Welcome to the Blood Donation Buddy App!</string>
+    <string name="welcomePageImgDesc">An infographic showing the makeup of blood and listing the blood types/</string>
+    <string name="welcomePageContent">Welcome to the BloodDonationBuddy App! This app serves a purpose to provide information about the blood donation process.
+        It will detail what blood donation is and why it is a great act of kindness.
+        You will also be able to learn about the various different blood types to learn what it tells about you,
+        and what the blood donation process looks like.
+        It even allows you to determine whether or not you can donate blood by asking some simple questions about yourself.
+    </string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
