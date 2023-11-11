@@ -2,13 +2,18 @@ package com.example.blooddonationbuddy.ViewPager;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.blooddonationbuddy.R;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +21,9 @@ import com.example.blooddonationbuddy.R;
  * create an instance of this fragment.
  */
 public class ViewPagerHostFragment extends Fragment {
+
+    ViewPager2 viewPager2;
+    String[] bloodTypes = {"TYPE A", "TYPE B", "TYPE AB", "TYPE O"};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +69,17 @@ public class ViewPagerHostFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_view_pager_host, container, false);
+        View view = inflater.inflate(R.layout.fragment_view_pager_host, container, false);
+        viewPager2 = view.findViewById(R.id.vpHost);
+        viewPager2.setAdapter(new CustomViewPagerAdapter(getActivity()));
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        TabLayout tabLayout = view.findViewById(R.id.bloodType);
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) ->
+                tab.setText(bloodTypes[position])).attach();
     }
 }
