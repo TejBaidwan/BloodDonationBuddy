@@ -21,9 +21,9 @@
         tools:layout="@layout/fragment_donation_process" />
     <fragment
         android:id="@+id/nav_blood_types"
-        android:name="com.example.blooddonationbuddy.LearnBloodTypesFragment"
+        android:name="com.example.blooddonationbuddy.ViewPager.ViewPagerHostFragment"
         android:label="Different Blood Types"
-        tools:layout="@layout/fragment_learn_blood_types" />
+        tools:layout="@layout/fragment_view_pager_host" />
     <fragment
         android:id="@+id/nav_welcome"
         android:name="com.example.blooddonationbuddy.WelcomeFragment"

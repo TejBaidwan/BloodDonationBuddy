@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ViewPager.ViewPagerHostFragment">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/bloodType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:textStyle="bold"
+        app:tabIconTint="@color/white"
+        app:tabIndicatorColor="#D50E0E"
+        app:tabTextColor="#D50E0E" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpHost"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

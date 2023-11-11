@@ -1,19 +1,29 @@
-package com.example.blooddonationbuddy;
+package com.example.blooddonationbuddy.ViewPager;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.blooddonationbuddy.R;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link LearnBloodTypesFragment#newInstance} factory method to
+ * Use the {@link ViewPagerHostFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class LearnBloodTypesFragment extends Fragment {
+public class ViewPagerHostFragment extends Fragment {
+
+    ViewPager2 viewPager2;
+    String[] bloodTypes = {"TYPE A", "TYPE B", "TYPE AB", "TYPE O"};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +34,7 @@ public class LearnBloodTypesFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public LearnBloodTypesFragment() {
+    public ViewPagerHostFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +44,11 @@ public class LearnBloodTypesFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment LearnBloodTypesFragment.
+     * @return A new instance of fragment ViewPagerHostFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static LearnBloodTypesFragment newInstance(String param1, String param2) {
-        LearnBloodTypesFragment fragment = new LearnBloodTypesFragment();
+    public static ViewPagerHostFragment newInstance(String param1, String param2) {
+        ViewPagerHostFragment fragment = new ViewPagerHostFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +69,17 @@ public class LearnBloodTypesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_learn_blood_types, container, false);
+        View view = inflater.inflate(R.layout.fragment_view_pager_host, container, false);
+        viewPager2 = view.findViewById(R.id.vpHost);
+        viewPager2.setAdapter(new CustomViewPagerAdapter(getActivity()));
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        TabLayout tabLayout = view.findViewById(R.id.bloodType);
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) ->
+                tab.setText(bloodTypes[position])).attach();
     }
 }
