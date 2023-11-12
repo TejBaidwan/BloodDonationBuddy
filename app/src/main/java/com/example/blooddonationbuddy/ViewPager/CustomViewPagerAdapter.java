@@ -17,15 +17,15 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return LearnBloodTypesFragment.newInstance("TYPE A BLOOD", R.drawable.bloodtypea, "FILLER TEXT1");
+                return LearnBloodTypesFragment.newInstance(R.string.typeA, R.drawable.bloodtypea, R.string.typeAContent);
             case 1:
-                return LearnBloodTypesFragment.newInstance("TYPE B BLOOD", R.drawable.bloodtypeb, "FILLER TEXT2");
+                return LearnBloodTypesFragment.newInstance(R.string.typeB, R.drawable.bloodtypeb, R.string.typeBContent);
             case 2:
-                return LearnBloodTypesFragment.newInstance("TYPE AB BLOOD", R.drawable.bloodtypeab, "FILLER TEXT3");
+                return LearnBloodTypesFragment.newInstance(R.string.typeAB, R.drawable.bloodtypeab, R.string.typeABContent);
             case 3:
-                return LearnBloodTypesFragment.newInstance("TYPE O BLOOD", R.drawable.bloodtypeo, "FILLER TEXT4");
+                return LearnBloodTypesFragment.newInstance(R.string.typeO, R.drawable.bloodtypeo, R.string.typeOContent);
             default:
-                return LearnBloodTypesFragment.newInstance("ERROR", R.drawable.bloodinfo, "NO TEXT AVAILABLE");
+                return LearnBloodTypesFragment.newInstance(R.string.typeError, R.drawable.bloodinfo, R.string.typeError);
 
         }
     }

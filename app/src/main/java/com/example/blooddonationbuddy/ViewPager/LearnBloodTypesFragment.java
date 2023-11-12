@@ -26,9 +26,9 @@ public class LearnBloodTypesFragment extends Fragment {
     private static final String ARG_PARAM3 = "param3";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
+    private int mParam1;
     private int mParam2;
-    private String mParam3;
+    private int mParam3;
 
     public LearnBloodTypesFragment() {
         // Required empty public constructor
@@ -43,12 +43,12 @@ public class LearnBloodTypesFragment extends Fragment {
      * @return A new instance of fragment LearnBloodTypesFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static LearnBloodTypesFragment newInstance(String param1, int param2, String param3) {
+    public static LearnBloodTypesFragment newInstance(int param1, int param2, int param3) {
         LearnBloodTypesFragment fragment = new LearnBloodTypesFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
+        args.putInt(ARG_PARAM1, param1);
         args.putInt(ARG_PARAM2, param2);
-        args.putString(ARG_PARAM3, param3);
+        args.putInt(ARG_PARAM3, param3);
         fragment.setArguments(args);
         return fragment;
     }
@@ -57,9 +57,9 @@ public class LearnBloodTypesFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam1 = getArguments().getInt(ARG_PARAM1);
             mParam2 = getArguments().getInt(ARG_PARAM2);
-            mParam3 = getArguments().getString(ARG_PARAM3);
+            mParam3 = getArguments().getInt(ARG_PARAM3);
         }
     }
 
@@ -73,7 +73,7 @@ public class LearnBloodTypesFragment extends Fragment {
         ImageView bloodTypeImg = view.findViewById(R.id.bloodTypeImage);
         TextView bloodTypeDesc = view.findViewById(R.id.bloodTypeDesc);
 
-        if (mParam1 != null && mParam3 != null) {
+        if (mParam1 != 0 && mParam2 != 0 && mParam3 != 0) {
             bloodType.setText(mParam1);
             bloodTypeImg.setImageResource(mParam2);
             bloodTypeDesc.setText(mParam3);
