@@ -23,7 +23,6 @@ import com.google.android.material.tabs.TabLayoutMediator;
 public class ViewPagerHostFragment extends Fragment {
 
     ViewPager2 viewPager2;
-    String[] bloodTypes = {"TYPE A", "TYPE B", "TYPE AB", "TYPE O"};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -80,6 +79,6 @@ public class ViewPagerHostFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TabLayout tabLayout = view.findViewById(R.id.bloodType);
         new TabLayoutMediator(tabLayout, viewPager2, (tab, position) ->
-                tab.setText(bloodTypes[position])).attach();
+                tab.setText(getResources().getStringArray(R.array.bloodTypes)[position])).attach();
     }
 }
