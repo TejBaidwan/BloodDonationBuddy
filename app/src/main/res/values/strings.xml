@@ -7,12 +7,14 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!--Navigation Drawer Titles-->
     <string name="menu_home">Welcome</string>
     <string name="menu_learn">Blood Types</string>
     <string name="menu_process">Donation Process</string>
     <string name="menu_eligibility">Can You Donate?</string>
     <string name="menu_credits">Credits</string>
 
+    <!--WelcomePage content-->
     <string name="welcomePageTitle">Welcome to the Blood Donation Buddy App!</string>
     <string name="welcomePageImgDesc">An infographic showing the makeup of blood and listing the blood types/</string>
     <string name="welcomePageContent">Welcome to the BloodDonationBuddy App! This app serves a purpose to provide information about the blood donation process.
@@ -20,6 +22,39 @@
         You will also be able to learn about the various different blood types to learn what it tells about you,
         and what the blood donation process looks like.
         It even allows you to determine whether or not you can donate blood by asking some simple questions about yourself.
+    </string>
+
+    <!--WelcomePage content-->
+    <string name="typeA">TYPE A BLOOD</string>
+    <string name="typeB">TYPE B BLOOD</string>
+    <string name="typeAB">TYPE AB BLOOD</string>
+    <string name="typeO">TYPE O BLOOD</string>
+    <string name="typeError">ERROR</string>
+    <string-array name="bloodTypes">
+        <item>@string/typeA</item>
+        <item>@string/typeB</item>
+        <item>@string/typeAB</item>
+        <item>@string/typeO</item>
+    </string-array>
+
+    <string name="typeAContent">Type A blood is the first of the four main blood groups. It consists of A+ and A- blood,
+    both of which are determined by the presence of a protein molecule called the Rh factor. This is a protein that aids with the bodies
+    natural defense and antibodies. This blood type group makes up almost 40% of the US population, with 33% being A+ and 7% being A-, according to
+    the CleavlandClinic. The A in this blood group comes from the fact that the blood has the presence of the A blood antigen, which determines the A
+    group designation. In general being part of the Type A blood group puts you in a common group with a large proportion of the population.</string>
+    <string name="typeBContent">Type B blood is the second of the four main blood groups. There are again 2 groups for the blood group, which are
+    B+ and B-, which are again determined by the presence/lack of the Rh factor protein. The B blood type is considerably less common than the A group,
+    with roughly 11% of the US population being part of this group. This makes this group one of the less common blood types to have, and therefore
+    the donation/reception of this blood group varies from group A, and there are a lot fewer donors for this blood type.</string>
+    <string name="typeABContent">Type AB blood is the third major blood group. It means that a person has both A and B blood antigens, and therefore they are a combination
+    of type A and B, and therefore make up the AB group. This is very uncommon among the general population, with only around 5% of the US population being part
+    of this group. In fact, AB- is the least common blood type in the US, with under 1% of the population having this blood type. This makes an AB blood type person
+    extremely rare and reflects there donation/reception status.</string>
+    <string name="typeOContent">Finally there is the fourth main blood group - Type O. This is different then the A and B types that make up the first 3 groups.
+        This blood type designation means that a persons blood does not have A or B blood antigens. Therefore they fall into a different classification called O.
+        The Type O group is interestingly very polar in its breakdown among the general population. O+ is actually the most common blood type in the US with almost 40%
+        having this blood type, and on the other end only about 7% are O-. This is a large difference that constitutes different reception and donation eligibility for
+        people with type O blood.
     </string>
 
 
