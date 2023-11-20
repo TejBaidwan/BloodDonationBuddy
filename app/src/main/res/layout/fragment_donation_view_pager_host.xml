@@ -17,18 +17,6 @@
         app:tabIndicatorColor="#D50E0E"
         app:tabTextColor="#D50E0E" />
 
-    <TextView
-        android:id="@+id/donationPageTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bungee"
-        android:padding="5sp"
-        android:text="Typical Blood Donation Process"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        android:textStyle="bold"/>
-
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vpDonationHost"
         android:layout_width="match_parent"

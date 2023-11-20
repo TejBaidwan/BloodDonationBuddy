@@ -29,4 +29,9 @@
         android:name="com.example.blooddonationbuddy.WelcomeFragment"
         android:label="Welcome!"
         tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/nav_donation_process"
+        android:name="com.example.blooddonationbuddy.DonationViewPager.DonationViewPagerHostFragment"
+        android:label="Blood Donation Process"
+        tools:layout="@layout/fragment_donation_view_pager_host" />
 </navigation>

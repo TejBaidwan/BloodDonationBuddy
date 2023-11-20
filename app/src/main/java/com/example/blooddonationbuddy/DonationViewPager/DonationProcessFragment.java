@@ -61,7 +61,7 @@ public class DonationProcessFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getInt(ARG_PARAM1);
             mParam2 = getArguments().getInt(ARG_PARAM2);
-            mParam3 = getArguments().getInt(ARG_PARAM2);
+            mParam3 = getArguments().getInt(ARG_PARAM3);
         }
     }
 
