@@ -80,6 +80,6 @@ public class DonationViewPagerHostFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TabLayout tabLayoutDonation = view.findViewById(R.id.donationStepNum);
         new TabLayoutMediator(tabLayoutDonation, viewPager2, (tab, position) ->
-                tab.setText(position));
+                tab.setText("STEP " + (position + 1))).attach();
     }
 }
