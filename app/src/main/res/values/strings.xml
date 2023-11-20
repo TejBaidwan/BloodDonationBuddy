@@ -24,7 +24,7 @@
         It even allows you to determine whether or not you can donate blood by asking some simple questions about yourself.
     </string>
 
-    <!--WelcomePage content-->
+    <!--Learn BloodTypes Page Content-->
     <string name="typeA">TYPE A BLOOD</string>
     <string name="typeB">TYPE B BLOOD</string>
     <string name="typeAB">TYPE AB BLOOD</string>
@@ -56,6 +56,38 @@
         having this blood type, and on the other end only about 7% are O-. This is a large difference that constitutes different reception and donation eligibility for
         people with type O blood.
     </string>
+
+    <!--Donation Process Page Content-->
+    <string name="donationTitle">Typical Blood Donation Process</string>
+
+    <string name="arrive">Arrive to Donation Center</string>
+    <string name="checkup">Complete Checkup and Questionnaire</string>
+    <string name="donate">Donate Blood</string>
+    <string name="refreshments">Enjoy Refreshments</string>
+    <string name="satisfaction">Rejoice!</string>
+
+    <string name="arriveDesc">When you arrive to the donation center you are expected to have had a meal prior to coming and have
+    had sufficient fluids in the hours leading up to your donation. This is because your blood needs to be viscous in order
+    to be drawn easily for a smooth experience. Upon arrival to the donation center you will have to present ID and check-in
+    with the staff. This will then lead to you answering a questionnaire with questions about your self and then a staff member
+    will verify the information and allow you to continue to the next step of the process.</string>
+    <string name="checkupDesc">You are then given a quick checkup to verify you are in good shape and well in order to give blood.
+    A quick prick from your finger to test your hemoglobin levels may be done in order to ensure your blood is in adequate shape for
+    donation. You will then be brought to the donation room and the donation process will begin soon after.</string>
+    <string name="donateDesc">You will be seated into a reclined chair and will be asked which arm you prefer to donate from.
+    You will then be briefed on how long the process will take and any potential problems you could have. A typical donation
+    yield is 450-500ml of blood, which is only about 10% of the blood flowing in your body. The area on your arm is sterilized
+    and the needle is passed into your vein. From here it takes about 15 minutes tops for the blood to full the vile, and as its happening
+    staff will be watching to make sure you are feeling OK. It is recommended to talk and keep alert to ensure an enjoyable
+    experience. Once your done your insertion point is cleaned and bandaged, and you are given a final report of your donation.</string>
+    <string name="refreshmentDesc">This may be the best part of whole process - the snacks! There are usually snacks and refreshments
+    for downers after they are done, like cookies, chips,etc. Enjoy these snacks as a token of appreciation for your generosity
+    and altruism - you deserved them!</string>
+    <string name="satisfactionDesc">That was all! Congratulations on completing a blood donation. This is something that
+    not everyone does, but for the ones that do its one of the greatest gifts they could give. You are providing a lifeline
+    for a stranger that could save their life and all it takes is around an hour from start to end. You can donate blood multiple
+    times a year if you would like, and once you have donated once you can have a donor ID that makes your donation process
+    that much simpler. Giving the gift of life is perhaps the greatest gift of all, and you did just that!</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
