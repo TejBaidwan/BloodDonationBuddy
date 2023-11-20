@@ -16,7 +16,7 @@
         tools:layout="@layout/fragment_donation_eligibility" />
     <fragment
         android:id="@+id/nav_process"
-        android:name="com.example.blooddonationbuddy.DonationProcessFragment"
+        android:name="com.example.blooddonationbuddy.DonationViewPager.DonationProcessFragment"
         android:label="Donation Process"
         tools:layout="@layout/fragment_donation_process" />
     <fragment
