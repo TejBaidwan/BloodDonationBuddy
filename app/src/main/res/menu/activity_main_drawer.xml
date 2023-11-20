@@ -13,7 +13,7 @@
             android:icon="@drawable/ic_baseline_school_24"
             android:title="@string/menu_learn" />
         <item
-            android:id="@+id/nav_process"
+            android:id="@+id/nav_donation_process"
             android:icon="@drawable/ic_baseline_double_arrow_24"
             android:title="@string/menu_process" />
         <item
