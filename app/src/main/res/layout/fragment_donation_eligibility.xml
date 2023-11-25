@@ -40,6 +40,12 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
+            <Spinner
+                android:id="@+id/ageSpinner"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <TextView
                 android:id="@+id/tattooForm"
                 android:layout_width="match_parent"
@@ -51,6 +57,14 @@
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/tattooToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textOff="False"
+                android:textOn="True"/>
 
             <TextView
                 android:id="@+id/dentalForm"
@@ -64,6 +78,14 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
+            <ToggleButton
+                android:id="@+id/dentalToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textOff="False"
+                android:textOn="True" />
+
             <TextView
                 android:id="@+id/pregnantForm"
                 android:layout_width="match_parent"
@@ -75,6 +97,14 @@
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/pregnantToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textOff="False"
+                android:textOn="True" />
 
             <TextView
                 android:id="@+id/weightForm"
@@ -88,6 +118,14 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
+            <ToggleButton
+                android:id="@+id/weightToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textOff="False"
+                android:textOn="True" />
+
             <TextView
                 android:id="@+id/medicationForm"
                 android:layout_width="match_parent"
@@ -99,6 +137,14 @@
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/medicationToggle"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOff="False"
+                android:textOn="True" />
         </LinearLayout>
 
 
