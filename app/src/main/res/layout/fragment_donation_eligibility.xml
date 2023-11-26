@@ -158,7 +158,7 @@
                 app:backgroundTint="#C5124E" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/eligibleResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"

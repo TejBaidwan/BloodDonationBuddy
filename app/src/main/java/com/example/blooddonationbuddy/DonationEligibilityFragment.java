@@ -7,9 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 /**
@@ -77,7 +79,58 @@ public class DonationEligibilityFragment extends Fragment {
         ToggleButton weightToggle = view.findViewById(R.id.weightToggle);
         ToggleButton medicineToggle = view.findViewById(R.id.medicationToggle);
 
+        TextView eligibilityResult = view.findViewById(R.id.eligibleResult);
+
         Button determine = view.findViewById(R.id.checkEligibility);
+
+        determine.setOnClickListener(new View.OnClickListener() {
+            boolean ageEligible = false;
+            boolean tattooEligible = true;
+            boolean dentalEligible = true;
+            boolean pregnantEligible = true;
+            boolean weightEligible = false;
+            boolean medicineEligible = true;
+
+            @Override
+            public void onClick(View v) {
+                ageSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        switch (position) {
+                            case 0 :
+                                ageEligible = false;
+                            default:
+                                ageEligible = true;
+                        }
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
+
+                    }
+                });
+
+                if (tattooToggle.isChecked()) {
+                    tattooEligible = false;
+                }
+                if (dentalToggle.isChecked()) {
+                    dentalEligible = false;
+                }
+                if (pregnantToggle.isChecked()) {
+                    pregnantEligible = false;
+                }
+                if (weightToggle.isChecked()) {
+                    weightEligible = true;
+                }
+                if (medicineToggle.isChecked()) {
+                    medicineEligible = false;
+                }
+            }
+
+
+
+        });
+
 
         return view;
     }

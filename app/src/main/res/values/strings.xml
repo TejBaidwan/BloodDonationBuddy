@@ -97,6 +97,11 @@
         <item>40–65</item>
         <item>65+</item>
     </string-array>
+    <string name="eligible">YOU ARE ELIGIBLE TO DONATE BLOOD!</string>
+    <string name="notEligible">YOU AREN\'T ELIGIBLE TO DONATE BLOOD!</string>
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
