@@ -89,6 +89,38 @@
     times a year if you would like, and once you have donated once you can have a donor ID that makes your donation process
     that much simpler. Giving the gift of life is perhaps the greatest gift of all, and you did just that!</string>
 
+    <!--Donation Process Page Content-->
+    <string name="formTitle">Determine Donation Eligibility</string>
+    <string name="ageLabel">How old are you?</string>
+    <string name="tattooLabel">Have you had tattoos in the past 3 months?</string>
+    <string name="dentalLabel">Have you had a dental operation in the last 3 days?</string>
+    <string name="pregnantLabel">Are you currently pregnant or have delivered in the past 6 months?</string>
+    <string name="weightLabel">Do you weigh more than 110 lbs?</string>
+    <string name="medicineLabel">Are you taking prescription medication?</string>
+    <string name="eligibleButton">Check Eligibility</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+
+    <string-array name="ageOptions">
+        <item>12–17</item>
+        <item>18–25</item>
+        <item>26–39</item>
+        <item>40–65</item>
+        <item>65+</item>
+    </string-array>
+
+    <string name="eligible">YOU ARE ELIGIBLE TO DONATE BLOOD!</string>
+    <string name="notEligible">YOU AREN\'T ELIGIBLE TO DONATE BLOOD!</string>
+    <string name="ageProblem">YOU ARE NOT 18 YEARS OLD YET!</string>
+    <string name="tattooProblem">YOU CAN\'T HAVE TATTOOS LESS THAN 3 MONTHS OLD!</string>
+    <string name="dentalProblem">YOU CAN\'T DONATE UNTIL 3 DAYS AFTER!</string>
+    <string name="weightProblem">YOU NEED TO BE AT LEAST 110LBS</string>
+    <string name="pregnantProblem">YOU CAN\'T HAVE BEEN PREGNANT OR DELIVERED IN THE PAST 6 MONTHS!</string>
+    <string name="medicineProblem">YOU MUST VERIFY YOUR MEDICATION DOES NOT INFRINGE DONATION ABILITY!!</string>
+
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
