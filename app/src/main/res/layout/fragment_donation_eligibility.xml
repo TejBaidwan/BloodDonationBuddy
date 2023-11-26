@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
-                android:text="Determine Donation Eligibility"
+                android:text="@string/formTitle"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="32sp"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
-                android:text="How old are you?"
+                android:text="@string/ageLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -43,9 +43,10 @@
 
             <Spinner
                 android:id="@+id/ageSpinner"
-                android:padding="10sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="10sp" />
 
             <TextView
                 android:id="@+id/tattooForm"
@@ -53,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
-                android:text="Have you had tattoos in the past 3 months?"
+                android:text="@string/tattooLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -64,8 +65,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:textOff="False"
-                android:textOn="True"/>
+                android:textOff="@string/no"
+                android:textOn="@string/yes" />
 
             <TextView
                 android:id="@+id/dentalForm"
@@ -73,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
-                android:text="Have you had a dental operation in the last 3 days?"
+                android:text="@string/dentalLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -84,8 +85,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:textOff="False"
-                android:textOn="True" />
+                android:textOff="@string/no"
+                android:textOn="@string/yes" />
 
             <TextView
                 android:id="@+id/pregnantForm"
@@ -93,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
-                android:text="Are you currently pregnant or have delivered in the past 6 months?"
+                android:text="@string/pregnantLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -104,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:textOff="False"
+                android:textOff="@string/no"
                 android:textOn="True" />
 
             <TextView
@@ -113,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
-                android:text="Do you weigh more than 110 lbs?"
+                android:text="@string/weightLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -124,8 +125,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10sp"
-                android:textOff="False"
-                android:textOn="True" />
+                android:textOff="@string/no"
+                android:textOn="@string/yes" />
 
             <TextView
                 android:id="@+id/medicationForm"
@@ -133,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
-                android:text="Are you taking prescription medication?"
+                android:text="@string/medicineLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -141,11 +142,11 @@
 
             <ToggleButton
                 android:id="@+id/medicationToggle"
-                android:padding="10sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textOff="False"
-                android:textOn="True" />
+                android:padding="10sp"
+                android:textOff="@string/no"
+                android:textOn="@string/yes" />
 
             <Button
                 android:id="@+id/checkEligibility"
@@ -153,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="24sp"
                 android:fontFamily="@font/bungee"
-                android:text="CHECK ELIGIBILITY"
+                android:text="@string/eligibleButton"
                 android:textSize="24sp"
                 app:backgroundTint="#C5124E" />
 
