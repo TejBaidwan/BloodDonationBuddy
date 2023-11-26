@@ -8,7 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.ToggleButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -68,6 +70,14 @@ public class DonationEligibilityFragment extends Fragment {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, ages);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ageSpinner.setAdapter(adapter);
+
+        ToggleButton tattooToggle = view.findViewById(R.id.tattooToggle);
+        ToggleButton dentalToggle = view.findViewById(R.id.dentalToggle);
+        ToggleButton pregnantToggle = view.findViewById(R.id.pregnantToggle);
+        ToggleButton weightToggle = view.findViewById(R.id.weightToggle);
+        ToggleButton medicineToggle = view.findViewById(R.id.medicationToggle);
+
+        Button determine = view.findViewById(R.id.checkEligibility);
 
         return view;
     }
