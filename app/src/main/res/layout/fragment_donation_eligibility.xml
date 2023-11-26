@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -35,7 +36,7 @@
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
                 android:text="How old are you?"
-                android:textAlignment="start"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -53,7 +54,7 @@
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
                 android:text="Have you had tattoos in the past 3 months?"
-                android:textAlignment="start"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -73,7 +74,7 @@
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
                 android:text="Have you had a dental operation in the last 3 days?"
-                android:textAlignment="start"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -93,7 +94,7 @@
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
                 android:text="Are you currently pregnant or have delivered in the past 6 months?"
-                android:textAlignment="start"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -113,7 +114,7 @@
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
                 android:text="Do you weigh more than 110 lbs?"
-                android:textAlignment="start"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -133,7 +134,7 @@
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
                 android:text="Are you taking prescription medication?"
-                android:textAlignment="start"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -145,6 +146,27 @@
                 android:layout_height="wrap_content"
                 android:textOff="False"
                 android:textOn="True" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:fontFamily="@font/bungee"
+                android:text="CHECK ELIGIBILITY"
+                android:textSize="24sp"
+                app:backgroundTint="#C5124E" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
 
