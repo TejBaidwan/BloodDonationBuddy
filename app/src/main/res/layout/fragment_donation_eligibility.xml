@@ -64,6 +64,7 @@
                 android:id="@+id/tattooToggle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="24sp"
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes" />
@@ -84,6 +85,7 @@
                 android:id="@+id/dentalToggle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="24sp"
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes" />
@@ -104,6 +106,7 @@
                 android:id="@+id/pregnantToggle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="24sp"
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="True" />
@@ -124,6 +127,7 @@
                 android:id="@+id/weightToggle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="24sp"
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes" />
@@ -144,6 +148,7 @@
                 android:id="@+id/medicationToggle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="24sp"
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes" />
@@ -162,7 +167,7 @@
                 android:id="@+id/eligibleResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/bungee"
+                android:fontFamily="casual"
                 android:padding="5sp"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
