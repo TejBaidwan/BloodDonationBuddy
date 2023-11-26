@@ -84,12 +84,12 @@ public class DonationEligibilityFragment extends Fragment {
         Button determine = view.findViewById(R.id.checkEligibility);
 
         determine.setOnClickListener(new View.OnClickListener() {
-            boolean ageEligible = false;
-            boolean tattooEligible = true;
-            boolean dentalEligible = true;
-            boolean pregnantEligible = true;
-            boolean weightEligible = false;
-            boolean medicineEligible = true;
+            boolean ageEligible;
+            boolean tattooEligible;
+            boolean dentalEligible;
+            boolean pregnantEligible;
+            boolean weightEligible;
+            boolean medicineEligible;
 
             @Override
             public void onClick(View v) {
@@ -110,23 +110,24 @@ public class DonationEligibilityFragment extends Fragment {
                     }
                 });
 
-                if (tattooToggle.isChecked()) {
-                    tattooEligible = false;
-                }
-                if (dentalToggle.isChecked()) {
-                    dentalEligible = false;
-                }
-                if (pregnantToggle.isChecked()) {
-                    pregnantEligible = false;
-                }
-                if (weightToggle.isChecked()) {
-                    weightEligible = true;
-                }
-                if (medicineToggle.isChecked()) {
-                    medicineEligible = false;
+                tattooEligible = tattooToggle.isChecked();
+
+                dentalEligible = dentalToggle.isChecked();
+
+                pregnantEligible = pregnantToggle.isChecked();
+
+                weightEligible = weightToggle.isChecked();
+
+                medicineEligible = medicineToggle.isChecked();
+
+                if (ageEligible && !tattooEligible && !dentalEligible && !pregnantEligible && weightEligible && !medicineEligible) {
+                    eligibilityResult.setText(R.string.eligible);
+                    eligibilityResult.setTextColor(getResources().getColor(R.color.green));
+                } else {
+                    eligibilityResult.setText(R.string.notEligible);
+                    eligibilityResult.setTextColor(getResources().getColor(R.color.red));
                 }
             }
-
 
 
         });
