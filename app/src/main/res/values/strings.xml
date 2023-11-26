@@ -97,8 +97,15 @@
         <item>40–65</item>
         <item>65+</item>
     </string-array>
+
     <string name="eligible">YOU ARE ELIGIBLE TO DONATE BLOOD!</string>
     <string name="notEligible">YOU AREN\'T ELIGIBLE TO DONATE BLOOD!</string>
+    <string name="ageProblem">YOU ARE NOT 18 YEARS OLD YET!</string>
+    <string name="tattooProblem">YOU CAN\'T HAVE TATTOOS LESS THAN 3 MONTHS OLD!</string>
+    <string name="dentalProblem">YOU CAN\'T DONATE UNTIL 3 DAYS AFTER!</string>
+    <string name="weightProblem">YOU NEED TO BE AT LEAST 110LBS</string>
+    <string name="pregnantProblem">YOU CAN\'T HAVE BEEN PREGNANT OR DELIVERED IN THE PAST 6 MONTHS!</string>
+    <string name="medicineProblem">YOU MUST VERIFY YOUR MEDICATION DOES NOT INFRINGE DONATION ABILITY!!</string>
 
 
 

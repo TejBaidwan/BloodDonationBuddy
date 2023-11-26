@@ -124,12 +124,30 @@ public class DonationEligibilityFragment extends Fragment {
                     eligibilityResult.setText(R.string.eligible);
                     eligibilityResult.setTextColor(getResources().getColor(R.color.green));
                 } else {
-                    eligibilityResult.setText(R.string.notEligible);
+                    String message;
+                    if (!ageEligible) {
+                        message = getString(R.string.notEligible) + "" + getString(R.string.ageProblem);
+                        eligibilityResult.setText(message);
+                    } else if (tattooEligible) {
+                        message = getString(R.string.notEligible) + "" + getString(R.string.tattooProblem);
+                        eligibilityResult.setText(message);
+                    } else if (dentalEligible) {
+                        message = getString(R.string.notEligible) + "" + getString(R.string.dentalProblem);
+                        eligibilityResult.setText(message);
+                    } else if (pregnantEligible) {
+                        message = getString(R.string.notEligible) + "" + getString(R.string.pregnantProblem);
+                        eligibilityResult.setText(message);
+                    } else if (!weightEligible) {
+                        message = getString(R.string.notEligible) + "" + getString(R.string.weightProblem);
+                        eligibilityResult.setText(message);
+                    } else {
+                        message = getString(R.string.notEligible) + "" + getString(R.string.medicineProblem);
+                        eligibilityResult.setText(message);
+                    }
+
                     eligibilityResult.setTextColor(getResources().getColor(R.color.red));
                 }
             }
-
-
         });
 
 
