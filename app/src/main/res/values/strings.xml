@@ -89,7 +89,14 @@
     times a year if you would like, and once you have donated once you can have a donor ID that makes your donation process
     that much simpler. Giving the gift of life is perhaps the greatest gift of all, and you did just that!</string>
 
-
+    <!--Donation Process Page Content-->
+    <string-array name="ageOptions">
+        <item>12–17</item>
+        <item>18–25</item>
+        <item>26–39</item>
+        <item>40–65</item>
+        <item>65+</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

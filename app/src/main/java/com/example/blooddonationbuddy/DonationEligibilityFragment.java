@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +61,14 @@ public class DonationEligibilityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_donation_eligibility, container, false);
+        View view = inflater.inflate(R.layout.fragment_donation_eligibility, container, false);
+
+        Spinner ageSpinner = view.findViewById(R.id.ageSpinner);
+        String[] ages = getResources().getStringArray(R.array.ageOptions);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, ages);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ageSpinner.setAdapter(adapter);
+
+        return view;
     }
 }
