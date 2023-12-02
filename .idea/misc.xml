@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/layout-sw600dp/fragment_donation_eligibility.xml" value="0.157421875" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/donation_history_item_view.xml" value="0.225" />
         <entry key="app/src/main/res/layout/donation_step_view.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_blood_donation_v_p_host.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/fragment_credits.xml" value="0.15416666666666667" />
