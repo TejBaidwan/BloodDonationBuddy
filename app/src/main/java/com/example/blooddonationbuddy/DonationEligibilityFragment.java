@@ -1,5 +1,7 @@
 package com.example.blooddonationbuddy;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,9 +12,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+import java.util.Arrays;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,9 +84,14 @@ public class DonationEligibilityFragment extends Fragment {
         ToggleButton weightToggle = view.findViewById(R.id.weightToggle);
         ToggleButton medicineToggle = view.findViewById(R.id.medicationToggle);
 
+        Button smsDetails = view.findViewById(R.id.textDetails);
+        EditText phone = view.findViewById(R.id.enterPhone);
+
         TextView eligibilityResult = view.findViewById(R.id.eligibleResult);
 
         Button determine = view.findViewById(R.id.checkEligibility);
+        String[] age = new String[1];
+        String[] message = {""};
 
         determine.setOnClickListener(new View.OnClickListener() {
             boolean ageEligible;
@@ -98,9 +108,11 @@ public class DonationEligibilityFragment extends Fragment {
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                         switch (position) {
                             case 0 :
+                                age[0] = parent.getItemAtPosition(position).toString();
                                 ageEligible = false;
                             default:
                                 ageEligible = true;
+                                age[0] = parent.getItemAtPosition(position).toString();
                         }
                     }
 
@@ -122,31 +134,48 @@ public class DonationEligibilityFragment extends Fragment {
 
                 if (ageEligible && !tattooEligible && !dentalEligible && !pregnantEligible && weightEligible && !medicineEligible) {
                     eligibilityResult.setText(R.string.eligible);
+                    message[0] = getString(R.string.eligible);
                     eligibilityResult.setTextColor(getResources().getColor(R.color.green));
                 } else {
-                    String message;
                     if (!ageEligible) {
-                        message = getString(R.string.notEligible) + " " + getString(R.string.ageProblem);
-                        eligibilityResult.setText(message);
+                        message[0] = getString(R.string.notEligible) + " " + getString(R.string.ageProblem);
+                        eligibilityResult.setText(message[0]);
                     } else if (tattooEligible) {
-                        message = getString(R.string.notEligible) + " " + getString(R.string.tattooProblem);
-                        eligibilityResult.setText(message);
+                        message[0] = getString(R.string.notEligible) + " " + getString(R.string.tattooProblem);
+                        eligibilityResult.setText(message[0]);
                     } else if (dentalEligible) {
-                        message = getString(R.string.notEligible) + " " + getString(R.string.dentalProblem);
-                        eligibilityResult.setText(message);
+                        message[0] = getString(R.string.notEligible) + " " + getString(R.string.dentalProblem);
+                        eligibilityResult.setText(message[0]);
                     } else if (pregnantEligible) {
-                        message = getString(R.string.notEligible) + " " + getString(R.string.pregnantProblem);
-                        eligibilityResult.setText(message);
+                        message[0] = getString(R.string.notEligible) + " " + getString(R.string.pregnantProblem);
+                        eligibilityResult.setText(message[0]);
                     } else if (!weightEligible) {
-                        message = getString(R.string.notEligible) + " " + getString(R.string.weightProblem);
-                        eligibilityResult.setText(message);
+                        message[0] = getString(R.string.notEligible) + " " + getString(R.string.weightProblem);
+                        eligibilityResult.setText(message[0]);
                     } else {
-                        message = getString(R.string.notEligible) + " " + getString(R.string.medicineProblem);
-                        eligibilityResult.setText(message);
+                        message[0] = getString(R.string.notEligible) + " " + getString(R.string.medicineProblem);
+                        eligibilityResult.setText(message[0]);
                     }
 
                     eligibilityResult.setTextColor(getResources().getColor(R.color.red));
                 }
+            }
+        });
+
+        smsDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:" + phone.getText().toString()));
+                i.putExtra("sms_body",
+                        "Here are your results!\n" +
+                                "Age Range: " + Arrays.toString(age) + "\n" +
+                                "Tattoo Status: " + tattooToggle.getText().toString() + "\n" +
+                                "Dental Status: " + dentalToggle.getText().toString() + "\n" +
+                                "Pregnant Status: " + pregnantToggle.getText().toString() + "\n" +
+                                "Weight Status: " + weightToggle.getText().toString() + "\n" +
+                                "Medicine Status: " + medicineToggle.getText().toString() + "\n" +
+                                "Eligibility: " + message[0]);
+                startActivity(i);
             }
         });
 
