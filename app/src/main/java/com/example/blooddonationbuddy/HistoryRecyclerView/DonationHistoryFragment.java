@@ -1,5 +1,7 @@
 package com.example.blooddonationbuddy.HistoryRecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.blooddonationbuddy.R;
 
@@ -70,6 +73,7 @@ public class DonationHistoryFragment extends Fragment {
         ArrayList<DonationHistoryItem> donationHistoryItems = new ArrayList<>();
         RecyclerView recyclerView = view.findViewById(R.id.donationHistory);
 
+
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearOne, R.drawable.right_arrow, R.string.eventOne));
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearTwo, R.drawable.right_arrow, R.string.eventTwo));
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearThree, R.drawable.right_arrow, R.string.eventThree));
@@ -94,6 +98,16 @@ public class DonationHistoryFragment extends Fragment {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new CustomRecyclerViewAdapter(donationHistoryItems));
+
+        Button callBtn = view.findViewById(R.id.call);
+
+        callBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:18882366283"));
+                startActivity(i);
+            }
+        });
 
         return view;
     }

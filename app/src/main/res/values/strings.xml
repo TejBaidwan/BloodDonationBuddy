@@ -126,6 +126,8 @@
 
 
     <!--Donation History Page Content-->
+
+    <string name="callText">Call the CanadianBloodServices</string>
     <string name="donationHistoryTitle">A History of Blood Donation</string>
     <string name="yearOne">1628</string>
     <string name="yearTwo">1665</string>
