@@ -51,6 +51,19 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <Button
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/emailText"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
     </ScrollView>
 
