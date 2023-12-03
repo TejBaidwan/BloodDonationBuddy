@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/beige"
     android:orientation="vertical"
-    tools:context=".CreditsFragment">
+    tools:context=".CreditsRecyclerView.CreditsFragment">
 
     <TextView
         android:id="@+id/creditsTitle"
@@ -73,8 +73,8 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/imageRecyclerView"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpHostSource"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

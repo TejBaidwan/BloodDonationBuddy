@@ -6,7 +6,7 @@
     app:startDestination="@id/nav_credits">
     <fragment
         android:id="@+id/nav_credits"
-        android:name="com.example.blooddonationbuddy.CreditsFragment"
+        android:name="com.example.blooddonationbuddy.CreditsRecyclerView.CreditsFragment"
         android:label="Credits"
         tools:layout="@layout/fragment_credits" />
     <fragment
