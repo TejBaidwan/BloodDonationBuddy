@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 
 import com.example.blooddonationbuddy.R;
 
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link DonationHistoryFragment#newInstance} factory method to
