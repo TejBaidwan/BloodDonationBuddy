@@ -43,11 +43,11 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/donationHistorySource"
+                android:id="@+id/bloodTypeSource"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
-                android:text="@string/donationHistorySource"
+                android:text="@string/bloodTypeSource"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
@@ -61,11 +61,11 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/bloodTypeSource"
+                android:id="@+id/donationHistorySource"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
-                android:text="@string/bloodTypeSource"
+                android:text="@string/donationHistorySource"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 

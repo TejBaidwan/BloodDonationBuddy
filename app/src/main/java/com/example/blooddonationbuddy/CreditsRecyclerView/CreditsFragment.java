@@ -1,5 +1,7 @@
 package com.example.blooddonationbuddy.CreditsRecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.blooddonationbuddy.HistoryRecyclerView.CustomRecyclerViewAdapter;
 import com.example.blooddonationbuddy.HistoryRecyclerView.DonationHistoryItem;
@@ -71,6 +74,37 @@ public class CreditsFragment extends Fragment {
 
         ArrayList<SourceItem> sourceItems = new ArrayList<>();
         RecyclerView recyclerView = view.findViewById(R.id.sources);
+        Button bloodTypesSource = view.findViewById(R.id.bloodTypeSource);
+        Button donationProcessSource = view.findViewById(R.id.donationProcessSource);
+        Button donationHistorySource = view.findViewById(R.id.donationHistorySource);
+
+        bloodTypesSource.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://my.clevelandclinic.org/health/treatments/21213-blood-types"));
+                startActivity(i);
+            }
+        });
+
+        donationProcessSource.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.blood.ca/en/blood/donating-blood/donation-process"));
+                startActivity(i);
+            }
+        });
+
+        donationHistorySource.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.aabb.org/news-resources/resources/transfusion-medicine" +
+                                "/highlights-of-transfusion-medicine-history"));
+                startActivity(i);
+            }
+        });
 
 
 
