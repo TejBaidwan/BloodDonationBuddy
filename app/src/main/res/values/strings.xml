@@ -12,6 +12,7 @@
     <string name="menu_learn">Blood Types</string>
     <string name="menu_process">Donation Process</string>
     <string name="menu_eligibility">Can You Donate?</string>
+    <string name="menu_history">Donation History</string>
     <string name="menu_credits">Credits</string>
 
     <!--WelcomePage content-->

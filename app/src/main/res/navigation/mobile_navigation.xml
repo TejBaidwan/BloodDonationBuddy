@@ -34,4 +34,9 @@
         android:name="com.example.blooddonationbuddy.DonationViewPager.DonationViewPagerHostFragment"
         android:label="Blood Donation Process"
         tools:layout="@layout/fragment_donation_view_pager_host" />
+    <fragment
+        android:id="@+id/nav_donation_history"
+        android:name="com.example.blooddonationbuddy.HistoryRecyclerView.DonationHistoryFragment"
+        android:label="A History of Blood Donation"
+        tools:layout="@layout/fragment_donation_history" />
 </navigation>

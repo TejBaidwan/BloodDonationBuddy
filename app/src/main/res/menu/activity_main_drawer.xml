@@ -21,6 +21,10 @@
             android:icon="@drawable/ic_baseline_question_mark_24"
             android:title="@string/menu_eligibility" />
         <item
+            android:id="@+id/nav_donation_history"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="@string/menu_history" />
+        <item
             android:id="@+id/nav_credits"
             android:icon="@drawable/ic_baseline_source_24"
             android:title="@string/menu_credits" />
