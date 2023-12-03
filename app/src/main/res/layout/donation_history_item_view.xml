@@ -8,27 +8,28 @@
     android:baselineAligned="false">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/year"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/bungee"
             android:padding="5sp"
             android:text="YEAR"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
         android:orientation="vertical">
 
 
@@ -40,18 +41,19 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/event"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/bungee"
             android:padding="5sp"
             android:text="EVENT"
+            android:layout_weight="1"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
