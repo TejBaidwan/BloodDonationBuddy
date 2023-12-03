@@ -65,6 +65,7 @@ public class WelcomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_welcome, container, false);
 
         Button emailBtn = view.findViewById(R.id.email);
+        Button mapBtn = view.findViewById(R.id.map);
 
         emailBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +78,15 @@ public class WelcomeFragment extends Fragment {
                         Uri.encode(subject) + "&body=" +
                         Uri.encode(body));
                 i.setData(data);
+                startActivity(i);
+            }
+        });
+
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri location = Uri.parse("geo:42.275282386463715, -83.00919639999998?q=m3015HowardAve");
+                Intent i = new Intent(Intent.ACTION_VIEW, location);
                 startActivity(i);
             }
         });
