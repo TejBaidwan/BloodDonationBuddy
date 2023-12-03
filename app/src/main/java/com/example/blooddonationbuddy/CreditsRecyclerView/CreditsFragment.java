@@ -116,6 +116,7 @@ public class CreditsFragment extends Fragment {
         sourceItems.add(new SourceItem(R.drawable.donationstep, R.string.donationProcessSourceThree));
         sourceItems.add(new SourceItem(R.drawable.refreshstep, R.string.donationProcessSourceFour));
         sourceItems.add(new SourceItem(R.drawable.satisfactionstep, R.string.donationProcessSourceFive));
+        sourceItems.add(new SourceItem(R.drawable.right_arrow, R.string.arrowImgSource));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new CustomRecyclerViewAdapterSource(sourceItems));
