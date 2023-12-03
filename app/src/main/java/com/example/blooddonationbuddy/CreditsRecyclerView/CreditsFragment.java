@@ -106,7 +106,16 @@ public class CreditsFragment extends Fragment {
             }
         });
 
-
+        sourceItems.add(new SourceItem(R.drawable.welcomeimage, R.string.welcomeImgSource));
+        sourceItems.add(new SourceItem(R.drawable.bloodtypea, R.string.bloodTypeSourceOne));
+        sourceItems.add(new SourceItem(R.drawable.bloodtypeb, R.string.bloodTypeSourceTwo));
+        sourceItems.add(new SourceItem(R.drawable.bloodtypeab, R.string.bloodTypeSourceThree));
+        sourceItems.add(new SourceItem(R.drawable.bloodtypeo, R.string.bloodTypeSourceFour));
+        sourceItems.add(new SourceItem(R.drawable.arrivestep, R.string.donationProcessSourceOne));
+        sourceItems.add(new SourceItem(R.drawable.checkupstep, R.string.donationProcessSourceTwo));
+        sourceItems.add(new SourceItem(R.drawable.donationstep, R.string.donationProcessSourceThree));
+        sourceItems.add(new SourceItem(R.drawable.refreshstep, R.string.donationProcessSourceFour));
+        sourceItems.add(new SourceItem(R.drawable.satisfactionstep, R.string.donationProcessSourceFive));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new CustomRecyclerViewAdapterSource(sourceItems));
