@@ -10,30 +10,33 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/beige">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/donationStep"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/beige"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
+                android:text="Step"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="32sp"
-                android:textStyle="bold"
-                android:text="Step" />
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/donationStepImg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15sp"
+                android:background="@color/beige"
                 tools:src="@tools:sample/avatars" />
 
             <TextView
@@ -41,12 +44,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
+                android:background="@color/red"
                 android:text="Step Info"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:fontFamily="casual"/>
+                app:fontFamily="casual" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
