@@ -72,6 +72,8 @@ public class CreditsFragment extends Fragment {
         ArrayList<SourceItem> sourceItems = new ArrayList<>();
         RecyclerView recyclerView = view.findViewById(R.id.sources);
 
+
+
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new CustomRecyclerViewAdapterSource(sourceItems));
 

@@ -178,7 +178,22 @@
     <string name="donationProcessSource">Donation Process Info from CanadianBloodServices</string>
     <string name="donationHistorySource">Donation History Info from AABB</string>
 
-    <string name="test">https://tbaidwan.scweb.ca</string>
+    <string name="welcomeImgSource">Image by brgfx on Freepik</string>
+
+    <string name="bloodTypeSourceOne">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceTwo">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceThree">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceFour">Image by brgfx on Freepik</string>
+
+
+    <string name="donationProcessSourceOne">Image by pch.vector on Freepik</string>
+    <string name="donationProcessSourceTwo">Image by Freepik</string>
+    <string name="donationProcessSourceThree">Image by pikisuperstar on Freepik</string>
+    <string name="donationProcessSourceFour">Image by catalyststuff on Freepik</string>
+    <string name="donationProcessSourceFive">Image by pch.vector on Freepik</string>
+
+    <string name="arrowImgSource">Design by CreativeStock on Freepik</string>
+
 
 
 
