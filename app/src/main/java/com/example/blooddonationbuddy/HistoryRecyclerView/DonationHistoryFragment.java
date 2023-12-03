@@ -3,6 +3,8 @@ package com.example.blooddonationbuddy.HistoryRecyclerView;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,6 +65,36 @@ public class DonationHistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_donation_history, container, false);
+        View view = inflater.inflate(R.layout.fragment_donation_history, container, false);
+
+        ArrayList<DonationHistoryItem> donationHistoryItems = new ArrayList<>();
+        RecyclerView recyclerView = view.findViewById(R.id.donationHistory);
+
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearOne, R.drawable.right_arrow, R.string.eventOne));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearTwo, R.drawable.right_arrow, R.string.eventTwo));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearThree, R.drawable.right_arrow, R.string.eventThree));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearFour, R.drawable.right_arrow, R.string.eventFour));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearFive, R.drawable.right_arrow, R.string.eventFive));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearSix, R.drawable.right_arrow, R.string.eventSix));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearSeven, R.drawable.right_arrow, R.string.eventSeven));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearEight, R.drawable.right_arrow, R.string.eventEight));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearNine, R.drawable.right_arrow, R.string.eventNine));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearTen, R.drawable.right_arrow, R.string.eventTen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearEleven, R.drawable.right_arrow, R.string.eventEleven));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearTwelve, R.drawable.right_arrow, R.string.eventTwelve));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearThirteen, R.drawable.right_arrow, R.string.eventThirteen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearFourteen, R.drawable.right_arrow, R.string.eventFourteen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearFifteen, R.drawable.right_arrow, R.string.eventFifteen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearSixteen, R.drawable.right_arrow, R.string.eventSixteen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearSeventeen, R.drawable.right_arrow, R.string.eventSeventeen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearEighteen, R.drawable.right_arrow, R.string.eventEighteen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearNineteen, R.drawable.right_arrow, R.string.eventNineteen));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearNTwenty, R.drawable.right_arrow, R.string.eventNTwenty));
+        donationHistoryItems.add(new DonationHistoryItem(R.string.yearTwentyOne, R.drawable.right_arrow, R.string.eventTwentyOne));
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(new CustomRecyclerViewAdapter(donationHistoryItems));
+
+        return view;
     }
 }
