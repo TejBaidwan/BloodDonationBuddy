@@ -123,6 +123,7 @@
 
 
     <!--Donation History Page Content-->
+    <string name="donationHistoryTitle">A History of Blood Donation</string>
     <string name="yearOne">1628</string>
     <string name="yearTwo">1665</string>
     <string name="yearThree">1667</string>
@@ -168,6 +169,43 @@
     <string name="eventNTwenty">FDA licensing of Nucleic acid amplification test (NAT) for HIV and HCV.</string>
     <string name="eventTwentyOne">FDA grants emergency use authorization for freeze-dried plasma in combat settings.</string>
 
+    <!--Donation History Page Content-->
+    <string name="creditsTitle">Where are the assets in this app from?</string>
+    <string name="textualSources">These buttons will take you to the websites</string>
+    <string name="imageSources">Scroll through to see the sources for the image assets</string>
+
+    <string name="bloodTypeSource">BloodType info from CleavlandClinic</string>
+    <string name="donationProcessSource">Donation Process Info from CanadianBloodServices</string>
+    <string name="donationHistorySource">Donation History Info from AABB</string>
+
+    <string name="welcomeImgSource">Image by brgfx on Freepik</string>
+
+    <string name="bloodTypeSourceOne">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceTwo">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceThree">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceFour">Image by brgfx on Freepik</string>
+
+
+    <string name="donationProcessSourceOne">Image by pch.vector on Freepik</string>
+    <string name="donationProcessSourceTwo">Image by Freepik</string>
+    <string name="donationProcessSourceThree">Image by pikisuperstar on Freepik</string>
+    <string name="donationProcessSourceFour">Image by catalyststuff on Freepik</string>
+    <string name="donationProcessSourceFive">Image by pch.vector on Freepik</string>
+
+    <string name="arrowImgSource">Design by CreativeStock on Freepik</string>
+
+
+
+
+
+
+
+
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

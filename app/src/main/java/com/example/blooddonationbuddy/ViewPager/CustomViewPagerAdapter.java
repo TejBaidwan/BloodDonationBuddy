@@ -25,7 +25,7 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
             case 3:
                 return LearnBloodTypesFragment.newInstance(R.string.typeO, R.drawable.bloodtypeo, R.string.typeOContent);
             default:
-                return LearnBloodTypesFragment.newInstance(R.string.typeError, R.drawable.bloodinfo, R.string.typeError);
+                return LearnBloodTypesFragment.newInstance(R.string.typeError, R.drawable.welcomeimage, R.string.typeError);
 
         }
     }

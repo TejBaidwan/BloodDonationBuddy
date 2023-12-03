@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_credits">
+    app:startDestination="@id/nav_welcome">
     <fragment
         android:id="@+id/nav_credits"
-        android:name="com.example.blooddonationbuddy.CreditsFragment"
+        android:name="com.example.blooddonationbuddy.CreditsRecyclerView.CreditsFragment"
         android:label="Credits"
         tools:layout="@layout/fragment_credits" />
     <fragment
@@ -16,9 +16,9 @@
         tools:layout="@layout/fragment_donation_eligibility" />
     <fragment
         android:id="@+id/nav_process"
-        android:name="com.example.blooddonationbuddy.DonationViewPager.DonationProcessFragment"
+        android:name="com.example.blooddonationbuddy.DonationViewPager.DonationViewPagerHostFragment"
         android:label="Donation Process"
-        tools:layout="@layout/fragment_donation_process" />
+        tools:layout="@layout/fragment_donation_view_pager_host" />
     <fragment
         android:id="@+id/nav_blood_types"
         android:name="com.example.blooddonationbuddy.ViewPager.ViewPagerHostFragment"
