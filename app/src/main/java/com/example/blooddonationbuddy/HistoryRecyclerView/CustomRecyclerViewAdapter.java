@@ -3,6 +3,7 @@ package com.example.blooddonationbuddy.HistoryRecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -46,7 +47,7 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter {
     class CustomViewHolder extends RecyclerView.ViewHolder {
         protected TextView historyItemYear;
         protected ImageView historyItemImg;
-        protected TextView historyItemName;
+        protected Button historyItemName;
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
