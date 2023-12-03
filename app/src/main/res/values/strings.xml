@@ -171,6 +171,26 @@
 
     <!--Donation History Page Content-->
     <string name="creditsTitle">Where are the assets in this app from?</string>
+    <string name="textualSources">These buttons will take you to the websites</string>
+    <string name="imageSources">Scroll through to see the sources for the image assets</string>
+
+    <string name="bloodTypeSource">BloodType info from CleavlandClinic</string>
+    <string name="donationProcessSource">Donation Process Info from CanadianBloodServices</string>
+    <string name="donationHistorySource">Donation History Info from AABB</string>
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
