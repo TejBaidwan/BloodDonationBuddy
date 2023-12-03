@@ -9,17 +9,19 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/beige">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/welcomeTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/beige"
                 android:fontFamily="@font/bungee"
                 android:padding="5sp"
                 android:text="@string/welcomePageTitle"
@@ -32,6 +34,7 @@
                 android:id="@+id/welcomeImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/red"
                 android:contentDescription="@string/welcomePageImgDesc"
                 android:src="@drawable/bloodinfo" />
 
@@ -40,6 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
+                android:background="@color/beige"
                 android:fontFamily="casual"
                 android:text="@string/welcomePageContent"
                 android:textAlignment="textStart"
