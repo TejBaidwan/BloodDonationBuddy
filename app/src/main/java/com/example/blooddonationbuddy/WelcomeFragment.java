@@ -1,5 +1,7 @@
 package com.example.blooddonationbuddy;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +62,25 @@ public class WelcomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_welcome, container, false);
+        View view = inflater.inflate(R.layout.fragment_welcome, container, false);
+
+        Button emailBtn = view.findViewById(R.id.email);
+
+        emailBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_SENDTO);
+                String cc = "baidwantejvir@gmail.com";
+                String subject = "Question regarding blood donation";
+                String body = "I have a question regarding blood donation";
+                Uri data = Uri.parse("mailto:feedback@blood.ca" + "?cc=" + Uri.encode(cc) + "&subject=" +
+                        Uri.encode(subject) + "&body=" +
+                        Uri.encode(body));
+                i.setData(data);
+                startActivity(i);
+            }
+        });
+
+        return view;
     }
 }

@@ -25,6 +25,8 @@
         It even allows you to determine whether or not you can donate blood by asking some simple questions about yourself.
     </string>
 
+    <string name="emailText">Email CanadaBloodServices with your Queries</string>
+
     <!--Learn BloodTypes Page Content-->
     <string name="typeA">TYPE A BLOOD</string>
     <string name="typeB">TYPE B BLOOD</string>
