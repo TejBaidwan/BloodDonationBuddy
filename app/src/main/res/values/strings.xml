@@ -12,6 +12,7 @@
     <string name="menu_learn">Blood Types</string>
     <string name="menu_process">Donation Process</string>
     <string name="menu_eligibility">Can You Donate?</string>
+    <string name="menu_history">Donation History</string>
     <string name="menu_credits">Credits</string>
 
     <!--WelcomePage content-->
@@ -121,6 +122,51 @@
     <string name="medicineProblem">YOU MUST VERIFY YOUR MEDICATION DOES NOT INFRINGE DONATION ABILITY!!</string>
 
 
+    <!--Donation History Page Content-->
+    <string name="yearOne">1628</string>
+    <string name="yearTwo">1665</string>
+    <string name="yearThree">1667</string>
+    <string name="yearFour">1795</string>
+    <string name="yearFive">1840</string>
+    <string name="yearSix">1884</string>
+    <string name="yearSeven">1900</string>
+    <string name="yearEight">1907</string>
+    <string name="yearNine">1912</string>
+    <string name="yearTen">1932</string>
+    <string name="yearEleven">1940</string>
+    <string name="yearTwelve">1947</string>
+    <string name="yearThirteen">1950</string>
+    <string name="yearFourteen">1951</string>
+    <string name="yearFifteen">1961</string>
+    <string name="yearSixteen">1970</string>
+    <string name="yearSeventeen">1983</string>
+    <string name="yearEighteen">1992</string>
+    <string name="yearNineteen">2002</string>
+    <string name="yearNTwenty">2003</string>
+    <string name="yearTwentyOne">2018</string>
+
+    <string name="eventOne">Discovery of blood circulation by William Harvey.</string>
+    <string name="eventTwo">First successful blood transfusion in England by Richard Lower.</string>
+    <string name="eventThree">Successful sheep-to-human transfusions reported in France and England.</string>
+    <string name="eventFour">Philip Syng Physick performs the first human blood transfusion in Philadelphia.</string>
+    <string name="eventFive">Samuel Armstrong Lane performs the first successful whole blood transfusion in London.</string>
+    <string name="eventSix">Saline infusion replaces milk as a "blood substitute."</string>
+    <string name="eventSeven">Karl Landsteiner discovers the first three human blood groups.</string>
+    <string name="eventEight">Ludvig Hektoen suggests cross-matching blood for safer transfusions.</string>
+    <string name="eventNine">Roger Lee and Paul Dudley White coin the terms "universal donor" and "universal recipient." after
+    learning that type O blood can be given to any patient, and AB types can receive any type</string>
+    <string name="eventTen">Establishment of the first blood bank in Leningrad.</string>
+    <string name="eventEleven">US government establishes a blood collection program for the UK during WW2.</string>
+    <string name="eventTwelve">ABO blood-typing and syphilis testing on each blood unit.</string>
+    <string name="eventThirteen">Introduction of plastic bags for blood collection by Carl Walter and W.P. Murphy, Jr.</string>
+    <string name="eventFourteen">Formation of the American Association of Blood Banks committee on Inspection and Accreditation.</string>
+    <string name="eventFifteen">Recognition of platelet concentrates for reducing mortality in cancer patients.</string>
+    <string name="eventSixteen">Shift toward an all-volunteer blood donor system in US blood banks.</string>
+    <string name="eventSeventeen">Additive solutions extend red blood cell shelf life to 42 days.</string>
+    <string name="eventEighteen">Implementation of HIV-1 and HIV-2 testing for donor blood.</string>
+    <string name="eventNineteen">Identification of West Nile virus as transfusion transmissible.</string>
+    <string name="eventNTwenty">FDA licensing of Nucleic acid amplification test (NAT) for HIV and HCV.</string>
+    <string name="eventTwentyOne">FDA grants emergency use authorization for freeze-dried plasma in combat settings.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
