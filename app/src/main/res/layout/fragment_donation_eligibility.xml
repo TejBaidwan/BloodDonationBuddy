@@ -193,6 +193,26 @@
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/enterPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPhonetic"
+                android:text="ENTER PHONE # NO DASHES" />
+
+            <Button
+                android:id="@+id/textDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:fontFamily="@font/bungee"
+                android:text="TEXT YOUR RESULTS"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:backgroundTint="@color/green" />
         </LinearLayout>
 
 
