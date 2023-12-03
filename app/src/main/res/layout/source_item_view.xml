@@ -17,6 +17,7 @@
         android:id="@+id/sourceName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
         android:layout_weight="1"
         android:fontFamily="@font/bungee"
         android:padding="5sp"
@@ -24,13 +25,5 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/sourceButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Button"
-        android:textColor="@color/black" />
 
 </LinearLayout>

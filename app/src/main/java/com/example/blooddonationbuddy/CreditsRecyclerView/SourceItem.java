@@ -4,14 +4,10 @@ public class SourceItem {
 
     private int img;
     private int source;
-    private int buttonText;
-    private int buttonLocation;
 
-    public SourceItem(int img, int source, int buttonText, int buttonLocation) {
+    public SourceItem(int img, int source) {
         this.img = img;
         this.source = source;
-        this.buttonText = buttonText;
-        this.buttonLocation = buttonLocation;
     }
 
     public int getImg() {
@@ -28,21 +24,5 @@ public class SourceItem {
 
     public void setSource(int source) {
         this.source = source;
-    }
-
-    public int getButtonText() {
-        return buttonText;
-    }
-
-    public void setButtonText(int buttonText) {
-        this.buttonText = buttonText;
-    }
-
-    public int getButtonLocation() {
-        return buttonLocation;
-    }
-
-    public void setButtonLocation(int buttonLocation) {
-        this.buttonLocation = buttonLocation;
     }
 }

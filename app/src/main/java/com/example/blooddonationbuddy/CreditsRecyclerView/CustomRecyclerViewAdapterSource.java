@@ -1,5 +1,7 @@
 package com.example.blooddonationbuddy.CreditsRecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,13 +38,6 @@ public class CustomRecyclerViewAdapterSource extends RecyclerView.Adapter {
         final CustomViewHolder viewHolder1 = (CustomViewHolder) holder;
         viewHolder1.sourceImg.setImageResource(mySourceItem.getImg());
         viewHolder1.sourceName.setText(mySourceItem.getSource());
-        viewHolder1.sourceButton.setText(mySourceItem.getButtonText());
-        viewHolder1.sourceButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
     }
 
     @Override
@@ -53,13 +48,11 @@ public class CustomRecyclerViewAdapterSource extends RecyclerView.Adapter {
     class CustomViewHolder extends RecyclerView.ViewHolder {
         protected ImageView sourceImg;
         protected TextView sourceName;
-        protected Button sourceButton;
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
             this.sourceImg = itemView.findViewById(R.id.sourceImg);
             this.sourceName = itemView.findViewById(R.id.sourceName);
-            this.sourceButton = itemView.findViewById(R.id.sourceButton);
         }
     }
 }

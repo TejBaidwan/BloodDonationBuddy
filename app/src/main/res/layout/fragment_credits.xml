@@ -7,74 +7,86 @@
     android:orientation="vertical"
     tools:context=".CreditsRecyclerView.CreditsFragment">
 
-    <TextView
-        android:id="@+id/creditsTitle"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/beige"
-        android:fontFamily="@font/bungee"
-        android:padding="5sp"
-        android:text="@string/creditsTitle"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textualSource"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/beige"
-        android:fontFamily="@font/bungee"
-        android:padding="5sp"
-        android:text="@string/textualSources"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/bloodTypeSource"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bungee"
-        android:text="@string/bloodTypeSource"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/creditsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beige"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/creditsTitle"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/donationProcessSource"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bungee"
-        android:text="@string/donationProcessSource"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textualSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beige"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/textualSources"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/donationHistorySource"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/bungee"
-        android:text="@string/donationHistorySource"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+            <Button
+                android:id="@+id/donationHistorySource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="@string/donationHistorySource"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/ImageSource"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/beige"
-        android:fontFamily="@font/bungee"
-        android:padding="5sp"
-        android:text="@string/imageSources"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+            <Button
+                android:id="@+id/donationProcessSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="@string/donationProcessSource"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/bloodTypeSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="@string/bloodTypeSource"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ImageSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beige"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/imageSources"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sources"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

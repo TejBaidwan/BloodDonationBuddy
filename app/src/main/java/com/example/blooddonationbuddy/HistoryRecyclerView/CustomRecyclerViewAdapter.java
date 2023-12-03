@@ -47,7 +47,7 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter {
     class CustomViewHolder extends RecyclerView.ViewHolder {
         protected TextView historyItemYear;
         protected ImageView historyItemImg;
-        protected Button historyItemName;
+        protected TextView historyItemName;
 
         public CustomViewHolder(@NonNull View itemView) {
             super(itemView);
