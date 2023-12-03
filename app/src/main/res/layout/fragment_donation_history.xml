@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/beige"
     android:orientation="vertical"
     tools:context=".HistoryRecyclerView.DonationHistoryFragment">
 
@@ -18,6 +19,20 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:background="@color/beige"
+        android:fontFamily="@font/bungee"
+        android:padding="5sp"
+        android:text="@string/callText"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
