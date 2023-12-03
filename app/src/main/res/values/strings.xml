@@ -123,6 +123,7 @@
 
 
     <!--Donation History Page Content-->
+    <string name="donationHistoryTitle">A History of Blood Donation</string>
     <string name="yearOne">1628</string>
     <string name="yearTwo">1665</string>
     <string name="yearThree">1667</string>
@@ -167,7 +168,6 @@
     <string name="eventNineteen">Identification of West Nile virus as transfusion transmissible.</string>
     <string name="eventNTwenty">FDA licensing of Nucleic acid amplification test (NAT) for HIV and HCV.</string>
     <string name="eventTwentyOne">FDA grants emergency use authorization for freeze-dried plasma in combat settings.</string>
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

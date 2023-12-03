@@ -4,4 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CreditsFragment"/>
+    tools:context=".CreditsFragment">
+
+    <TextView
+        android:id="@+id/creditsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        android:fontFamily="@font/bungee"
+        android:padding="5sp"
+        android:text="@string/creditsTitle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
