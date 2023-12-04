@@ -39,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/beige"
+            android:contentDescription="@string/arrowDesc"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
@@ -59,7 +60,7 @@
             android:padding="5sp"
             android:text="EVENT"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/textSize"
             android:textStyle="bold" />
     </LinearLayout>
 

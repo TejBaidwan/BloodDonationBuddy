@@ -123,6 +123,7 @@ public class CreditsFragment extends Fragment {
         sourceItems.add(new SourceItem(R.drawable.refreshstep, R.string.donationProcessSourceFour));
         sourceItems.add(new SourceItem(R.drawable.satisfactionstep, R.string.donationProcessSourceFive));
         sourceItems.add(new SourceItem(R.drawable.right_arrow, R.string.arrowImgSource));
+        sourceItems.add(new SourceItem(R.drawable.appicon, R.string.launcherIconSource));
 
         //Setting the layout manager and adpater for the arraylist to the custom one made by myself
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

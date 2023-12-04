@@ -17,7 +17,7 @@
 
     <!--WelcomePage content-->
     <string name="welcomePageTitle">Welcome to the Blood Donation Buddy App!</string>
-    <string name="welcomePageImgDesc">An infographic showing the makeup of blood and listing the blood types/</string>
+    <string name="welcomePageImgDesc">An infographic showing a hand clutching a heart while donating blood</string>
     <string name="welcomePageContent">Welcome to the BloodDonationBuddy App! This app serves a purpose to provide information about the blood donation process.
         It will detail what blood donation is and why it is a great act of kindness.
         You will also be able to learn about the various different blood types to learn what it tells about you,
@@ -30,6 +30,8 @@
     <string name="socialText">Share our app on Social Media</string>
 
     <!--Learn BloodTypes Page Content-->
+
+    <string name="imgContentDesc">A pair of hands holding a bag labelled one of the four blood groups</string>
     <string name="typeA">TYPE A BLOOD</string>
     <string name="typeB">TYPE B BLOOD</string>
     <string name="typeAB">TYPE AB BLOOD</string>
@@ -95,6 +97,8 @@
     that much simpler. Giving the gift of life is perhaps the greatest gift of all, and you did just that!</string>
 
     <!--Donation Process Page Content-->
+    <string name="imgStepDesc">An animation of a donation step drawing</string>
+
     <string name="formTitle">Determine Donation Eligibility</string>
     <string name="ageLabel">How old are you?</string>
     <string name="tattooLabel">Have you had tattoos in the past 3 months?</string>
@@ -127,6 +131,7 @@
 
 
     <!--Donation History Page Content-->
+    <string name="arrowDesc">A black arrow pointing right</string>
 
     <string name="callText">Call the CanadianBloodServices</string>
     <string name="donationHistoryTitle">A History of Blood Donation</string>
@@ -175,7 +180,7 @@
     <string name="eventNTwenty">FDA licensing of Nucleic acid amplification test (NAT) for HIV and HCV.</string>
     <string name="eventTwentyOne">FDA grants emergency use authorization for freeze-dried plasma in combat settings.</string>
 
-    <!--Donation History Page Content-->
+    <!--Credits Page Content-->
     <string name="creditsTitle">Where are the assets in this app from?</string>
     <string name="textualSources">These buttons will take you to the websites</string>
     <string name="imageSources">Scroll through to see the sources for the image assets</string>
@@ -199,6 +204,8 @@
     <string name="donationProcessSourceFive">Image by pch.vector on Freepik</string>
 
     <string name="arrowImgSource">Design by CreativeStock on Freepik</string>
+
+    <string name="launcherIconSource">Designed by juicy_fish on Freepik Icons</string>
 
 
 
