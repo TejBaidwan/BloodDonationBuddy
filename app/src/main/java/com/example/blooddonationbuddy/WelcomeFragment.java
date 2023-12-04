@@ -66,6 +66,7 @@ public class WelcomeFragment extends Fragment {
 
         Button emailBtn = view.findViewById(R.id.email);
         Button mapBtn = view.findViewById(R.id.map);
+        Button socialBtn = view.findViewById(R.id.socialMedia);
 
         emailBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +89,17 @@ public class WelcomeFragment extends Fragment {
                 Uri location = Uri.parse("geo:42.275282386463715, -83.00919639999998?q=m3015HowardAve");
                 Intent i = new Intent(Intent.ACTION_VIEW, location);
                 startActivity(i);
+            }
+        });
+
+        socialBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_SEND);
+
+                i.setType("text/plain");
+                i.putExtra(Intent.EXTRA_TEXT, "I found the BloodDonationBuddy app! Take a look at it!");
+                startActivity(Intent.createChooser(i, "Share the app with"));
             }
         });
 

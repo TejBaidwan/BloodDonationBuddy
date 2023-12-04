@@ -27,6 +27,7 @@
 
     <string name="emailText">Email CanadaBloodServices with your Queries</string>
     <string name="mapText">Visit a local blood donation center</string>
+    <string name="socialText">Share our app on Social Media</string>
 
     <!--Learn BloodTypes Page Content-->
     <string name="typeA">TYPE A BLOOD</string>
