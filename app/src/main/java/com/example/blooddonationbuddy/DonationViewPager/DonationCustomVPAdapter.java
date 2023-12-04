@@ -7,11 +7,20 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.blooddonationbuddy.R;
 
+/**
+ * @author Tej Baidwan
+ * This class represents the ViewPager adapter which populates the ViewPager found in the DonationProcess Page
+ */
 public class DonationCustomVPAdapter extends FragmentStateAdapter {
     public DonationCustomVPAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
 
+    /**
+     * This method gets the position the app is in in the ViewPager and populates it with parameters via newInstance()
+     * @param position - The position in the ViewPager
+     * @return
+     */
     @NonNull
     @Override
     public Fragment createFragment(int position) {
@@ -31,6 +40,10 @@ public class DonationCustomVPAdapter extends FragmentStateAdapter {
         }
     }
 
+    /**
+     * This method gets the items in this ViewPager Adapter
+     * @return int
+     */
     @Override
     public int getItemCount() {
         return 5;

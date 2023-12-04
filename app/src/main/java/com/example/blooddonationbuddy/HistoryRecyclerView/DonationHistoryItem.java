@@ -1,16 +1,24 @@
 package com.example.blooddonationbuddy.HistoryRecyclerView;
 
+/**
+ * @author Tej Baidwan
+ * This class represents a DonationHistoryItem which are the views which are scrolled thorugh in the History RecyclerView
+ */
 public class DonationHistoryItem {
+
+    //Properties
     private int year;
     private int connector;
     private int event;
 
+    //Constructor
     public DonationHistoryItem(int year, int connector, int event) {
         this.year = year;
         this.connector = connector;
         this.event = event;
     }
 
+    //Getters and Setters
     public int getYear() {
         return year;
     }

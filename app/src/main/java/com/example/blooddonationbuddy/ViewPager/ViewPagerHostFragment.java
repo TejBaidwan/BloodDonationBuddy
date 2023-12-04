@@ -16,6 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 /**
+ * @author Tej Baidwan
  * A simple {@link Fragment} subclass.
  * Use the {@link ViewPagerHostFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -69,11 +70,18 @@ public class ViewPagerHostFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_view_pager_host, container, false);
+
+        //Setting the ViewPagerHosts adapter to the custom adapter created
         viewPager2 = view.findViewById(R.id.vpHost);
         viewPager2.setAdapter(new CustomViewPagerAdapter(getActivity()));
         return view;
     }
 
+    /**
+     * This method contains code which creates the TabLayout for this VP and sets its textual values for each position
+     * @param view - The view in question
+     * @param savedInstanceState
+     */
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

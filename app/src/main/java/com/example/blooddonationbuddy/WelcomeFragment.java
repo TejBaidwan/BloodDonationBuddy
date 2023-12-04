@@ -64,10 +64,12 @@ public class WelcomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_welcome, container, false);
 
+        //Find the buttons on the welcome screen
         Button emailBtn = view.findViewById(R.id.email);
         Button mapBtn = view.findViewById(R.id.map);
         Button socialBtn = view.findViewById(R.id.socialMedia);
 
+        //Make the email button open an email intent with prefilled values for opening an email app
         emailBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,6 +85,7 @@ public class WelcomeFragment extends Fragment {
             }
         });
 
+        //Make the map button open a map intent with the location of Canadian Blood Services Windsor
         mapBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +95,7 @@ public class WelcomeFragment extends Fragment {
             }
         });
 
+        //Make the social media button open a SEND intent which open app to share the app with
         socialBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

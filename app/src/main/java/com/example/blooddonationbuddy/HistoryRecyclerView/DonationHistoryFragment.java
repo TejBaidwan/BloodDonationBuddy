@@ -18,6 +18,7 @@ import com.example.blooddonationbuddy.R;
 import java.util.ArrayList;
 
 /**
+ * @author Tej Baidwan
  * A simple {@link Fragment} subclass.
  * Use the {@link DonationHistoryFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -70,10 +71,11 @@ public class DonationHistoryFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_donation_history, container, false);
 
+        //Getting the RecyclerView for the History page and creating an arraylist to hold DonationItems
         ArrayList<DonationHistoryItem> donationHistoryItems = new ArrayList<>();
         RecyclerView recyclerView = view.findViewById(R.id.donationHistory);
 
-
+        //Adding DonationItems to the arraylist created above
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearOne, R.drawable.right_arrow, R.string.eventOne));
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearTwo, R.drawable.right_arrow, R.string.eventTwo));
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearThree, R.drawable.right_arrow, R.string.eventThree));
@@ -96,11 +98,14 @@ public class DonationHistoryFragment extends Fragment {
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearNTwenty, R.drawable.right_arrow, R.string.eventNTwenty));
         donationHistoryItems.add(new DonationHistoryItem(R.string.yearTwentyOne, R.drawable.right_arrow, R.string.eventTwentyOne));
 
+        //Setting the layout manager and adapter for the recyclerview
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new CustomRecyclerViewAdapter(donationHistoryItems));
 
+        //Finding the call button on screen
         Button callBtn = view.findViewById(R.id.call);
 
+        //Setting the event handler for the call button to create a new dial intent with the number of Canadian Blood Services
         callBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
