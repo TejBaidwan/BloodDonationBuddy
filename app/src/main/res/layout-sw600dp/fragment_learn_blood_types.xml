@@ -27,7 +27,7 @@
                 android:text="Blood Type"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="60sp"
+                android:textSize="@dimen/largeTitleSize"
                 android:textStyle="bold" />
 
             <ImageView
@@ -48,7 +48,7 @@
                 android:text="Blood Type Info"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/largeTextSize"
                 android:textStyle="bold"
                 app:fontFamily="casual" />
         </LinearLayout>

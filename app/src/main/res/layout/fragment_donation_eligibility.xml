@@ -27,7 +27,7 @@
                 android:text="@string/formTitle"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="32sp"
+                android:textSize="@dimen/titleSize"
                 android:textStyle="bold" />
 
             <TextView
@@ -40,7 +40,7 @@
                 android:text="@string/ageLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <Spinner
@@ -60,7 +60,7 @@
                 android:text="@string/tattooLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <ToggleButton
@@ -72,7 +72,7 @@
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 tools:ignore="DuplicateSpeakableTextCheck" />
 
             <TextView
@@ -85,7 +85,7 @@
                 android:text="@string/dentalLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <ToggleButton
@@ -97,7 +97,7 @@
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes"
-                android:textSize="24sp" />
+                android:textSize="@dimen/textSize" />
 
             <TextView
                 android:id="@+id/pregnantForm"
@@ -109,7 +109,7 @@
                 android:text="@string/pregnantLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <ToggleButton
@@ -121,7 +121,7 @@
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes"
-                android:textSize="24sp" />
+                android:textSize="@dimen/textSize" />
 
             <TextView
                 android:id="@+id/weightForm"
@@ -133,7 +133,7 @@
                 android:text="@string/weightLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <ToggleButton
@@ -145,7 +145,7 @@
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes"
-                android:textSize="24sp" />
+                android:textSize="@dimen/textSize" />
 
             <TextView
                 android:id="@+id/medicationForm"
@@ -157,7 +157,7 @@
                 android:text="@string/medicineLabel"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <ToggleButton
@@ -169,7 +169,7 @@
                 android:padding="10sp"
                 android:textOff="@string/no"
                 android:textOn="@string/yes"
-                android:textSize="24sp" />
+                android:textSize="@dimen/textSize" />
 
             <Button
                 android:id="@+id/checkEligibility"
@@ -179,7 +179,7 @@
                 android:fontFamily="@font/bungee"
                 android:text="@string/eligibleButton"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 app:backgroundTint="@color/green" />
 
             <TextView
@@ -191,7 +191,7 @@
                 android:padding="5sp"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <EditText
@@ -211,7 +211,7 @@
                 android:fontFamily="@font/bungee"
                 android:text="TEXT YOUR RESULTS"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 app:backgroundTint="@color/green" />
         </LinearLayout>
 

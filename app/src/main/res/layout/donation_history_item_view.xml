@@ -60,7 +60,7 @@
             android:padding="5sp"
             android:text="EVENT"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/textSize"
             android:textStyle="bold" />
     </LinearLayout>
 

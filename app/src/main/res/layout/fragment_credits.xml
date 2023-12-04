@@ -26,7 +26,7 @@
                 android:text="@string/creditsTitle"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="32sp"
+                android:textSize="@dimen/titleSize"
                 android:textStyle="bold" />
 
             <TextView
@@ -39,7 +39,7 @@
                 android:text="@string/textualSources"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <Button
@@ -49,6 +49,7 @@
                 android:fontFamily="@font/bungee"
                 android:text="@string/bloodTypeSource"
                 android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <Button
@@ -58,6 +59,7 @@
                 android:fontFamily="@font/bungee"
                 android:text="@string/donationProcessSource"
                 android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <Button
@@ -67,6 +69,7 @@
                 android:fontFamily="@font/bungee"
                 android:text="@string/donationHistorySource"
                 android:textColor="@color/black"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <TextView
@@ -79,7 +82,7 @@
                 android:text="@string/imageSources"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/textSize"
                 android:textStyle="bold" />
 
             <androidx.recyclerview.widget.RecyclerView
