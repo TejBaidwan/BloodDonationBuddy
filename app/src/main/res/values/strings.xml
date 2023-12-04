@@ -2,12 +2,223 @@
     <string name="app_name">BloodDonationBuddy</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Blood Donation Buddy</string>
+    <string name="nav_header_subtitle">Tej Baidwan</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <!--Navigation Drawer Titles-->
+    <string name="menu_home">Welcome</string>
+    <string name="menu_learn">Blood Types</string>
+    <string name="menu_process">Donation Process</string>
+    <string name="menu_eligibility">Can You Donate?</string>
+    <string name="menu_history">Donation History</string>
+    <string name="menu_credits">Credits</string>
+
+    <!--WelcomePage content-->
+    <string name="welcomePageTitle">Welcome to the Blood Donation Buddy App!</string>
+    <string name="welcomePageImgDesc">An infographic showing a hand clutching a heart while donating blood</string>
+    <string name="welcomePageContent">Welcome to the BloodDonationBuddy App! This app serves a purpose to provide information about the blood donation process.
+        It will detail what blood donation is and why it is a great act of kindness.
+        You will also be able to learn about the various different blood types to learn what it tells about you,
+        and what the blood donation process looks like.
+        It even allows you to determine whether or not you can donate blood by asking some simple questions about yourself.
+    </string>
+
+    <string name="emailText">Email CanadaBloodServices with your Queries</string>
+    <string name="mapText">Visit a local blood donation center</string>
+    <string name="socialText">Share our app on Social Media</string>
+
+    <!--Learn BloodTypes Page Content-->
+
+    <string name="imgContentDesc">A pair of hands holding a bag labelled one of the four blood groups</string>
+    <string name="typeA">TYPE A BLOOD</string>
+    <string name="typeB">TYPE B BLOOD</string>
+    <string name="typeAB">TYPE AB BLOOD</string>
+    <string name="typeO">TYPE O BLOOD</string>
+    <string name="typeError">ERROR</string>
+    <string-array name="bloodTypes">
+        <item>@string/typeA</item>
+        <item>@string/typeB</item>
+        <item>@string/typeAB</item>
+        <item>@string/typeO</item>
+    </string-array>
+
+    <string name="typeAContent">Type A blood is the first of the four main blood groups. It consists of A+ and A- blood,
+    both of which are determined by the presence of a protein molecule called the Rh factor. This is a protein that aids with the bodies
+    natural defense and antibodies. This blood type group makes up almost 40% of the US population, with 33% being A+ and 7% being A-, according to
+    the CleavlandClinic. The A in this blood group comes from the fact that the blood has the presence of the A blood antigen, which determines the A
+    group designation. In general being part of the Type A blood group puts you in a common group with a large proportion of the population.</string>
+    <string name="typeBContent">Type B blood is the second of the four main blood groups. There are again 2 groups for the blood group, which are
+    B+ and B-, which are again determined by the presence/lack of the Rh factor protein. The B blood type is considerably less common than the A group,
+    with roughly 11% of the US population being part of this group. This makes this group one of the less common blood types to have, and therefore
+    the donation/reception of this blood group varies from group A, and there are a lot fewer donors for this blood type.</string>
+    <string name="typeABContent">Type AB blood is the third major blood group. It means that a person has both A and B blood antigens, and therefore they are a combination
+    of type A and B, and therefore make up the AB group. This is very uncommon among the general population, with only around 5% of the US population being part
+    of this group. In fact, AB- is the least common blood type in the US, with under 1% of the population having this blood type. This makes an AB blood type person
+    extremely rare and reflects there donation/reception status.</string>
+    <string name="typeOContent">Finally there is the fourth main blood group - Type O. This is different then the A and B types that make up the first 3 groups.
+        This blood type designation means that a persons blood does not have A or B blood antigens. Therefore they fall into a different classification called O.
+        The Type O group is interestingly very polar in its breakdown among the general population. O+ is actually the most common blood type in the US with almost 40%
+        having this blood type, and on the other end only about 7% are O-. This is a large difference that constitutes different reception and donation eligibility for
+        people with type O blood.
+    </string>
+
+    <!--Donation Process Page Content-->
+    <string name="donationTitle">Typical Blood Donation Process</string>
+
+    <string name="arrive">Arrive to Donation Center</string>
+    <string name="checkup">Complete Checkup and Questionnaire</string>
+    <string name="donate">Donate Blood</string>
+    <string name="refreshments">Enjoy Refreshments</string>
+    <string name="satisfaction">Rejoice!</string>
+
+    <string name="arriveDesc">When you arrive to the donation center you are expected to have had a meal prior to coming and have
+    had sufficient fluids in the hours leading up to your donation. This is because your blood needs to be viscous in order
+    to be drawn easily for a smooth experience. Upon arrival to the donation center you will have to present ID and check-in
+    with the staff. This will then lead to you answering a questionnaire with questions about your self and then a staff member
+    will verify the information and allow you to continue to the next step of the process.</string>
+    <string name="checkupDesc">You are then given a quick checkup to verify you are in good shape and well in order to give blood.
+    A quick prick from your finger to test your hemoglobin levels may be done in order to ensure your blood is in adequate shape for
+    donation. You will then be brought to the donation room and the donation process will begin soon after.</string>
+    <string name="donateDesc">You will be seated into a reclined chair and will be asked which arm you prefer to donate from.
+    You will then be briefed on how long the process will take and any potential problems you could have. A typical donation
+    yield is 450-500ml of blood, which is only about 10% of the blood flowing in your body. The area on your arm is sterilized
+    and the needle is passed into your vein. From here it takes about 15 minutes tops for the blood to full the vile, and as its happening
+    staff will be watching to make sure you are feeling OK. It is recommended to talk and keep alert to ensure an enjoyable
+    experience. Once your done your insertion point is cleaned and bandaged, and you are given a final report of your donation.</string>
+    <string name="refreshmentDesc">This may be the best part of whole process - the snacks! There are usually snacks and refreshments
+    for downers after they are done, like cookies, chips,etc. Enjoy these snacks as a token of appreciation for your generosity
+    and altruism - you deserved them!</string>
+    <string name="satisfactionDesc">That was all! Congratulations on completing a blood donation. This is something that
+    not everyone does, but for the ones that do its one of the greatest gifts they could give. You are providing a lifeline
+    for a stranger that could save their life and all it takes is around an hour from start to end. You can donate blood multiple
+    times a year if you would like, and once you have donated once you can have a donor ID that makes your donation process
+    that much simpler. Giving the gift of life is perhaps the greatest gift of all, and you did just that!</string>
+
+    <!--Donation Eligibility Page Content-->
+    <string name="imgStepDesc">An animation of a donation step drawing</string>
+
+    <string name="formTitle">Determine Donation Eligibility</string>
+    <string name="ageLabel">How old are you?</string>
+    <string name="tattooLabel">Have you had tattoos in the past 3 months?</string>
+    <string name="dentalLabel">Have you had a dental operation in the last 3 days?</string>
+    <string name="pregnantLabel">Are you currently pregnant or have delivered in the past 6 months?</string>
+    <string name="weightLabel">Do you weigh more than 110 lbs?</string>
+    <string name="medicineLabel">Are you taking prescription medication?</string>
+    <string name="eligibleButton">Check Eligibility</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+
+    <string-array name="ageOptions">
+        <item>12–17</item>
+        <item>18–25</item>
+        <item>26–39</item>
+        <item>40–65</item>
+        <item>65+</item>
+    </string-array>
+
+    <string name="eligible">YOU ARE ELIGIBLE TO DONATE BLOOD!</string>
+    <string name="notEligible">YOU AREN\'T ELIGIBLE TO DONATE BLOOD!</string>
+    <string name="ageProblem">YOU ARE NOT 18 YEARS OLD YET!</string>
+    <string name="tattooProblem">YOU CAN\'T HAVE TATTOOS LESS THAN 3 MONTHS OLD!</string>
+    <string name="dentalProblem">YOU CAN\'T DONATE UNTIL 3 DAYS AFTER!</string>
+    <string name="weightProblem">YOU NEED TO BE AT LEAST 110LBS</string>
+    <string name="pregnantProblem">YOU CAN\'T HAVE BEEN PREGNANT OR DELIVERED IN THE PAST 6 MONTHS!</string>
+    <string name="medicineProblem">YOU MUST VERIFY YOUR MEDICATION DOES NOT INFRINGE DONATION ABILITY!!</string>
+
+
+    <!--Donation History Page Content-->
+    <string name="arrowDesc">A black arrow pointing right</string>
+
+    <string name="callText">Call the CanadianBloodServices</string>
+    <string name="donationHistoryTitle">A History of Blood Donation</string>
+    <string name="yearOne">1628</string>
+    <string name="yearTwo">1665</string>
+    <string name="yearThree">1667</string>
+    <string name="yearFour">1795</string>
+    <string name="yearFive">1840</string>
+    <string name="yearSix">1884</string>
+    <string name="yearSeven">1900</string>
+    <string name="yearEight">1907</string>
+    <string name="yearNine">1912</string>
+    <string name="yearTen">1932</string>
+    <string name="yearEleven">1940</string>
+    <string name="yearTwelve">1947</string>
+    <string name="yearThirteen">1950</string>
+    <string name="yearFourteen">1951</string>
+    <string name="yearFifteen">1961</string>
+    <string name="yearSixteen">1970</string>
+    <string name="yearSeventeen">1983</string>
+    <string name="yearEighteen">1992</string>
+    <string name="yearNineteen">2002</string>
+    <string name="yearNTwenty">2003</string>
+    <string name="yearTwentyOne">2018</string>
+
+    <string name="eventOne">Discovery of blood circulation by William Harvey.</string>
+    <string name="eventTwo">First successful blood transfusion in England by Richard Lower.</string>
+    <string name="eventThree">Successful sheep-to-human transfusions reported in France and England.</string>
+    <string name="eventFour">Philip Syng Physick performs the first human blood transfusion in Philadelphia.</string>
+    <string name="eventFive">Samuel Armstrong Lane performs the first successful whole blood transfusion in London.</string>
+    <string name="eventSix">Saline infusion replaces milk as a "blood substitute."</string>
+    <string name="eventSeven">Karl Landsteiner discovers the first three human blood groups.</string>
+    <string name="eventEight">Ludvig Hektoen suggests cross-matching blood for safer transfusions.</string>
+    <string name="eventNine">Roger Lee and Paul Dudley White coin the terms "universal donor" and "universal recipient." after
+    learning that type O blood can be given to any patient, and AB types can receive any type</string>
+    <string name="eventTen">Establishment of the first blood bank in Leningrad.</string>
+    <string name="eventEleven">US government establishes a blood collection program for the UK during WW2.</string>
+    <string name="eventTwelve">ABO blood-typing and syphilis testing on each blood unit.</string>
+    <string name="eventThirteen">Introduction of plastic bags for blood collection by Carl Walter and W.P. Murphy, Jr.</string>
+    <string name="eventFourteen">Formation of the American Association of Blood Banks committee on Inspection and Accreditation.</string>
+    <string name="eventFifteen">Recognition of platelet concentrates for reducing mortality in cancer patients.</string>
+    <string name="eventSixteen">Shift toward an all-volunteer blood donor system in US blood banks.</string>
+    <string name="eventSeventeen">Additive solutions extend red blood cell shelf life to 42 days.</string>
+    <string name="eventEighteen">Implementation of HIV-1 and HIV-2 testing for donor blood.</string>
+    <string name="eventNineteen">Identification of West Nile virus as transfusion transmissible.</string>
+    <string name="eventNTwenty">FDA licensing of Nucleic acid amplification test (NAT) for HIV and HCV.</string>
+    <string name="eventTwentyOne">FDA grants emergency use authorization for freeze-dried plasma in combat settings.</string>
+
+    <!--Credits Page Content-->
+    <string name="creditsTitle">Where are the assets in this app from?</string>
+    <string name="textualSources">These buttons will take you to the websites</string>
+    <string name="imageSources">Scroll through to see the sources for the image assets</string>
+
+    <string name="bloodTypeSource">BloodType info from CleavlandClinic</string>
+    <string name="donationProcessSource">Donation Process Info from CanadianBloodServices</string>
+    <string name="donationHistorySource">Donation History Info from AABB</string>
+
+    <string name="welcomeImgSource">Image by brgfx on Freepik</string>
+
+    <string name="bloodTypeSourceOne">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceTwo">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceThree">Image by brgfx on Freepik</string>
+    <string name="bloodTypeSourceFour">Image by brgfx on Freepik</string>
+
+
+    <string name="donationProcessSourceOne">Image by pch.vector on Freepik</string>
+    <string name="donationProcessSourceTwo">Image by Freepik</string>
+    <string name="donationProcessSourceThree">Image by pikisuperstar on Freepik</string>
+    <string name="donationProcessSourceFour">Image by catalyststuff on Freepik</string>
+    <string name="donationProcessSourceFive">Image by pch.vector on Freepik</string>
+
+    <string name="arrowImgSource">Design by CreativeStock on Freepik</string>
+
+    <string name="launcherIconSource">Designed by juicy_fish on Freepik Icons</string>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

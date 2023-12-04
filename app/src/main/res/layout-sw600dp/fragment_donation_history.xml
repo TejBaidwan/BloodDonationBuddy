@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical"
+    tools:context=".HistoryRecyclerView.DonationHistoryFragment">
+
+
+    <TextView
+        android:id="@+id/donationPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/beige"
+        android:fontFamily="@font/bungee"
+        android:padding="5sp"
+        android:text="@string/donationHistoryTitle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/largeTitleSize"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@color/beige"
+        android:fontFamily="@font/bungee"
+        android:padding="5sp"
+        android:text="@string/callText"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/largeTextSize"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/donationHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/beige" />
+</LinearLayout>
