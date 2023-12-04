@@ -36,6 +36,7 @@
                 android:layout_height="491dp"
                 android:layout_margin="15sp"
                 android:background="@color/beige"
+                android:contentDescription="@string/imgContentDesc"
                 tools:src="@tools:sample/avatars" />
 
             <TextView
