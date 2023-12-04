@@ -37,7 +37,7 @@ structure.
 ![processGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/4d47779f-0004-4bf4-a926-1a1821d9e445)
 ![welcomeGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/685b5dcb-26e5-4fdb-bfab-865dd5ec2025)
 
-*In the form ince you have determined your eligibility if you enter a phone number and click the send results button you will open a sms intent with the details of your form entires prefilled
+*In the form once you have determined your eligibility if you enter a phone number and click the send results button you will open a sms intent with the details of your form entires prefilled
 
 ## Authors
 
