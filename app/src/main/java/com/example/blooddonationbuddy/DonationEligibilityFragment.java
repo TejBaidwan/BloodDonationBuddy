@@ -72,18 +72,21 @@ public class DonationEligibilityFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_donation_eligibility, container, false);
 
+        //Create spinner and set its age options and adpater
         Spinner ageSpinner = view.findViewById(R.id.ageSpinner);
         String[] ages = getResources().getStringArray(R.array.ageOptions);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, ages);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ageSpinner.setAdapter(adapter);
 
+        //Find all the toggle buttons on screen
         ToggleButton tattooToggle = view.findViewById(R.id.tattooToggle);
         ToggleButton dentalToggle = view.findViewById(R.id.dentalToggle);
         ToggleButton pregnantToggle = view.findViewById(R.id.pregnantToggle);
         ToggleButton weightToggle = view.findViewById(R.id.weightToggle);
         ToggleButton medicineToggle = view.findViewById(R.id.medicationToggle);
 
+        //Find the send sms button and enter phone edittext
         Button smsDetails = view.findViewById(R.id.textDetails);
         EditText phone = view.findViewById(R.id.enterPhone);
 
@@ -93,6 +96,7 @@ public class DonationEligibilityFragment extends Fragment {
         String[] age = new String[1];
         String[] message = {""};
 
+        //Set the action handler for the eligibility button
         determine.setOnClickListener(new View.OnClickListener() {
             boolean ageEligible;
             boolean tattooEligible;
@@ -101,6 +105,7 @@ public class DonationEligibilityFragment extends Fragment {
             boolean weightEligible;
             boolean medicineEligible;
 
+            //Get the value of the age spinner and determine if its an eligible value or not
             @Override
             public void onClick(View v) {
                 ageSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -122,6 +127,7 @@ public class DonationEligibilityFragment extends Fragment {
                     }
                 });
 
+                //Get the status of each toggle button
                 tattooEligible = tattooToggle.isChecked();
 
                 dentalEligible = dentalToggle.isChecked();
@@ -132,6 +138,7 @@ public class DonationEligibilityFragment extends Fragment {
 
                 medicineEligible = medicineToggle.isChecked();
 
+                //Determine the conditon for eligibility and on eligibility and display the results
                 if (ageEligible && !tattooEligible && !dentalEligible && !pregnantEligible && weightEligible && !medicineEligible) {
                     eligibilityResult.setText(R.string.eligible);
                     message[0] = getString(R.string.eligible);
@@ -162,6 +169,7 @@ public class DonationEligibilityFragment extends Fragment {
             }
         });
 
+        //Make the sms button open an sms sendto intent which send the results of the form to the users entered phone number
         smsDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -20,6 +20,7 @@ import com.example.blooddonationbuddy.R;
 import java.util.ArrayList;
 
 /**
+ * @author Tej Baidwan
  * A simple {@link Fragment} subclass.
  * Use the {@link CreditsFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -72,12 +73,14 @@ public class CreditsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_credits, container, false);
 
+        //Create the recycler view to hold source objects and find nodes on screen
         ArrayList<SourceItem> sourceItems = new ArrayList<>();
         RecyclerView recyclerView = view.findViewById(R.id.sources);
         Button bloodTypesSource = view.findViewById(R.id.bloodTypeSource);
         Button donationProcessSource = view.findViewById(R.id.donationProcessSource);
         Button donationHistorySource = view.findViewById(R.id.donationHistorySource);
 
+        //Take app to the website defined below for the source of said content
         bloodTypesSource.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +90,7 @@ public class CreditsFragment extends Fragment {
             }
         });
 
+        //Take app to the website defined below for the source of said content
         donationProcessSource.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,6 +100,7 @@ public class CreditsFragment extends Fragment {
             }
         });
 
+        //Take app to the website defined below for the source of said content
         donationHistorySource.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,6 +111,7 @@ public class CreditsFragment extends Fragment {
             }
         });
 
+        //Adding the source items to the arraylist
         sourceItems.add(new SourceItem(R.drawable.welcomeimage, R.string.welcomeImgSource));
         sourceItems.add(new SourceItem(R.drawable.bloodtypea, R.string.bloodTypeSourceOne));
         sourceItems.add(new SourceItem(R.drawable.bloodtypeb, R.string.bloodTypeSourceTwo));
@@ -118,6 +124,7 @@ public class CreditsFragment extends Fragment {
         sourceItems.add(new SourceItem(R.drawable.satisfactionstep, R.string.donationProcessSourceFive));
         sourceItems.add(new SourceItem(R.drawable.right_arrow, R.string.arrowImgSource));
 
+        //Setting the layout manager and adpater for the arraylist to the custom one made by myself
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new CustomRecyclerViewAdapterSource(sourceItems));
 

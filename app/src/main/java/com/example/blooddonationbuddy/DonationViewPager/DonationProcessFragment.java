@@ -18,6 +18,7 @@ import com.example.blooddonationbuddy.R;
 import org.w3c.dom.Text;
 
 /**
+ * @author Tej Baidwan
  * A simple {@link Fragment} subclass.
  * Use the {@link DonationProcessFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -45,6 +46,7 @@ public class DonationProcessFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
+     * @param param3 Parameter 3.
      * @return A new instance of fragment DonationProcessFragment.
      */
     // TODO: Rename and change types and number of parameters
@@ -58,6 +60,10 @@ public class DonationProcessFragment extends Fragment {
         return fragment;
     }
 
+    /**
+     * This method sets the values to the three parameters to the bundled values
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,10 +80,12 @@ public class DonationProcessFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_donation_process, container, false);
 
+        //Find the nodes on the screen
         TextView donationStep = view.findViewById(R.id.donationStep);
         ImageView donationStepImg = view.findViewById(R.id.donationStepImg);
         TextView donationStepDesc = view.findViewById(R.id.donationStepDesc);
 
+        //Set node values to the bundled parameters
         if (mParam1 != 0 && mParam2 != 0 && mParam3 != 0) {
             donationStep.setText(mParam1);
             donationStepImg.setImageResource(mParam2);

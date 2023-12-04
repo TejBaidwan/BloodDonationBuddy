@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.blooddonationbuddy.R;
 
 /**
+ * @author Tej Baidwan
  * A simple {@link Fragment} subclass.
  * Use the {@link LearnBloodTypesFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -53,6 +54,10 @@ public class LearnBloodTypesFragment extends Fragment {
         return fragment;
     }
 
+    /**
+     * This method sets the values to the three parameters to the bundled values
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,10 +74,13 @@ public class LearnBloodTypesFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_learn_blood_types, container, false);
 
+        //Finding the nodes on screen
         TextView bloodType = view.findViewById(R.id.bloodTypeTitle);
         ImageView bloodTypeImg = view.findViewById(R.id.bloodTypeImage);
         TextView bloodTypeDesc = view.findViewById(R.id.bloodTypeDesc);
 
+
+        //Setting the values of the nodes on screen to the bundled parameters
         if (mParam1 != 0 && mParam2 != 0 && mParam3 != 0) {
             bloodType.setText(mParam1);
             bloodTypeImg.setImageResource(mParam2);
