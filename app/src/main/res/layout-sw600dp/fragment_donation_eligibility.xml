@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DonationEligibilityFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/eligibilityTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beige"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/formTitle"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ageForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/ageLabel"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/ageSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="10sp" />
+
+            <TextView
+                android:id="@+id/tattooForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/tattooLabel"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/tattooToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:background="@color/beige"
+                android:padding="10sp"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:textSize="24sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/dentalForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/dentalLabel"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/dentalToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:background="@color/beige"
+                android:padding="10sp"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/pregnantForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/pregnantLabel"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/pregnantToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:background="@color/beige"
+                android:padding="10sp"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/weightForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/weightLabel"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/weightToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:background="@color/beige"
+                android:padding="10sp"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/medicationForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:fontFamily="@font/bungee"
+                android:padding="5sp"
+                android:text="@string/medicineLabel"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/medicationToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:background="@color/beige"
+                android:padding="10sp"
+                android:textOff="@string/no"
+                android:textOn="@string/yes"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/checkEligibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:fontFamily="@font/bungee"
+                android:text="@string/eligibleButton"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                app:backgroundTint="@color/green" />
+
+            <TextView
+                android:id="@+id/eligibleResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/beige"
+                android:fontFamily="casual"
+                android:padding="5sp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/enterPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPhonetic"
+                android:text="ENTER PHONE # NO DASHES" />
+
+            <Button
+                android:id="@+id/textDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24sp"
+                android:fontFamily="@font/bungee"
+                android:text="TEXT YOUR RESULTS"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                app:backgroundTint="@color/green" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
