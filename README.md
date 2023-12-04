@@ -1,5 +1,7 @@
 # Welcome to BloodDonationBuddy!
 
+![appIcon](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/e7c9d994-2a86-4cc5-8317-57da6588b0eb)
+
 This is an app which serves the purpose of educating people about blood donation and why they should do it. The app contains informational sections which can educate 
 the user on blood, the donation process, and even the history of blood donation efforts.
 
@@ -25,6 +27,13 @@ The app can be run on mobile and tablet devices so it does not matter which kind
 
 That is all! I hope you find the app intuitive and easy to use. I have inlcuded some screenrecordings of an app walkthrough below so you can get an idea of the apps 
 structure. 
+
+![bloodTypeGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/00fa7e6c-3d6b-42e2-8178-4d43711533b2)
+![creditsGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/c22b1091-c2d6-4f6c-80b7-25178f939d41)
+![formGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/4b89b43d-fad0-4ba4-999a-038d78262bdc)
+![historyGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/2c0b67ce-6374-4208-9440-bd9532721638)
+![processGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/4d47779f-0004-4bf4-a926-1a1821d9e445)
+![welcomeGif](https://github.com/TejBaidwan/BloodDonationBuddy/assets/146671383/685b5dcb-26e5-4fdb-bfab-865dd5ec2025)
 
 ## Authors
 
